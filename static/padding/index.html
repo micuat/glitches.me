@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://glitches.me/dom-party.js"></script>
+</head>
+
+<body style="overflow: hidden">
+  <script>
+    var getJSON = function (url, callback) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', url, true);
+      xhr.responseType = 'json';
+      xhr.onload = function () {
+        var status = xhr.status;
+        if (status === 200) {
+          callback(null, xhr.response);
+        } else {
+          callback(status, xhr.response);
+        }
+      };
+      xhr.send();
+    };
+    const paths = document.location.href.split("/");
+    let path = paths[paths.length-1];
+    if(path == "") path = paths[paths.length-2];
+    if(path === undefined || path === null || path === "") {
+      path = "hiding";
+    }
+    if(path[0] == "#") path = path.substring(1);
+    getJSON("https://glitches.me/hiding/"+path, (status, response) => {
+      console.log(response)
+      let text = "not available";
+      if(response.data.text != null) {
+        text = response.data.text.split("\n").filter(e=>e.length>0);
+      }
+    p(text).shadow()//.scrollX(()=>Math.random()*0.01).scrollY(()=>Math.random()*0.01)
+    .scrollY(0,0.2)
+    .out(0)
+    });
+  </script>
+</body>
+
+</html>

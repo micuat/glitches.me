@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/dom-party.js"></script>
+</head>
+
+<body style="overflow: hidden">
+  <div style="position: absolute; z-index: 10">
+    <button onclick="codeit(`shape(4).repeat(10,10).out()`)">
+      grid
+    </button>
+    <button onclick="codeit(`osc(40,0.1,1.5).modulate(voronoi(3).sub(gradient()),1).out()`)">
+      voro
+    </button>
+  </div>
+  <script>
+    const domParty = new DomParty();
+
+
+    const urlParams = new URLSearchParams(window.location.search);
+    for (const [key, value] of urlParams) {
+      console.log(key, value);
+    }
+    let code = "shape(4).r().rotate(0,1).out()";
+    const c = urlParams.get("code");
+    if (c !== null) code = decodeURIComponent(atob(c));
+
+    let enc = "";
+
+    function codeit(code) {
+      enc = btoa(encodeURIComponent(code));
+      console.log(enc);
+      eval(code);
+      window.history.replaceState(
+        {},
+        "your web",
+        document.location.search.split("?")[0] + "?code=" + enc
+      );
+    }
+
+    codeit(code);
+
+    function jump(url) {
+      window.location = url + "?code=" + enc;
+    }
+
+
+
+    let x = 0;
+    let y = 0;
+    p(["welcome", "welcome", "!!!"]).shadow()//.scrollX(()=>Math.random()*0.01).scrollY(-0.2)
+      .scroll(() => (x = x * 0.9 + 0.1 * mouse.x / window.innerWidth) - 0.5,
+        () => (y = y * 0.9 + 0.1 * mouse.y / window.innerHeight) - 0.5)
+      .scrollY(-0.2)
+      .color([1, 0.1], 0.1, [0.1, 1]).size(100).out(3)
+    p(`<a>hydra.ojack.xyz?</a>`)
+      .shadow().rotate(0, 1).bg(1, 1, 1, .5).color(0.5, 0.1, 1).size(30)
+      .onclick(() => jump("https://hydra.ojack.xyz")).out(2)
+    p(`<a>weird-web.glitch.me?</a>`)
+      .shadow().scrollX(-0.3).bg(1, 1, 1, .5).color(0.5, 0.1, 1).size(30)
+      .onclick(() => jump("https://weird-web.glitch.me")).out(1)
+
+    canvas().out(0)
+  </script>
+</body>
+
+</html>

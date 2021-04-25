@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://glitches.me/dom-party.js"></script>
+</head>
+
+<body style="overflow: hidden">
+  <script>
+    p(`who.glitches.me`)
+      .color(0.5, 0.1, 1).size(40).scrollY(-0.4).out(2)
+    p(`<a href="https://you-watching-this.glitch.me/">YOU?</a>`)
+      .shadow().rotate(0, 1).scrollX(0.3).color(0.5, 0.1, 1).size(50).out(3)
+    p(`<a href="https://those-who.glitch.me/">them?</a>`)
+      .shadow().rotate(0, 1).scrollX(0).color(0.5, 0.1, 1).size(30).out(4)
+    p(`<a href="https://naoto.glitches.me/">naoto</a>`)
+      .shadow().rotate(0, 0.5).scrollX(-0.3).color(0.5, 0.1, 1).size(40).out(0)
+    let last = document.referrer;
+    if(last == "") last = "https://glitches.me/"
+    p(`back to <a href="${last}">${last}</a>`)
+      .scrollY(0.4).color(0.5, 0.1, 1).size(30).bg(1, 1, 1, 0.4).out(1)
+  </script>
+</body>
+
+</html>

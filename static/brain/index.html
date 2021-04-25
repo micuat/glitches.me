@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://glitches.me/dom-party.js"></script>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene style="position: absolute; z-index: 10">
+    <a-assets>
+      <a-asset-item id="lh" src="https://cdn.glitches.me/brain_lh.glb"></a-asset-item>
+    </a-assets>
+
+    <a-entity gltf-model="#lh" scale="0.1 0.1 0.1" position="0 0 -20" rotation="0 90 0"></a-entity>
+  </a-scene>
+
+  <script>
+    p(`<a href="https://what.glitches.me/">back</a>`)
+    .shadow().rotate(0,0.5).color(0.5,0.1,1).size(30).scroll(-0.2,0.2).out(12)
+    p("my brain").shadow().rotate(0,1).color(0.5,0.1,1).size(100).out(2)
+    p("The brain is scanned by MRI at the Functional Neuroimaging Unit in Montreal in 2017")
+    .color(1,1,1).bg(0,0,0).scrollX(0,0.1).size(30).scale(0.5).out(1)
+    p("A/D/S/F keys to move<br>mouse drag to pan").scroll(0.2,0.3).size(10).out(3)
+    // p(`<a href="https://glitches.me">back to... where?</a>`).scroll(0.3,-0.3).out(0)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "festival.glitches.me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify app/index.js -o bundle.js"
+  },
+  "author": "Naoto Hieda",
+  "license": "MIT",
+  "dependencies": {
+    "choo": "^7.1.0"
+  },
+  "devDependencies": {
+    "watchify": "^4.0.0"
+  }
+}

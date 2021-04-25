@@ -4,33 +4,17 @@
   <title>festival.glitches.me</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
   <script src="https://your-web.glitches.me/dom-party.js"></script>
 </head>
 
 <body>
+  <div id="bighead"></div>
   <div id="app">
-    <div id="bighead"></div>
-    <p>April 25, 2021 - April 24, 2022</p>
-    <p>festival.glitches.me is a festival that is supposed to ...</p>
-    <h2>Artists</h2>
-    <p>to be announced</p>
-    <h2>Activities</h2>
-    <p>Best Practices in Contemporary Dance (Practice)</p>
-    <p>Best Practices in Contemporary Dance (Chat)</p>
-    <p>Collective depressing session (24/7)</p>
-    <h2>Tickets</h2>
-    <p><a href="/tickets">tickets</a></p>
-    <h2>Partners</h2>
-    <p><a href="https://glitches.me">glitches.me</a></p>
   </div>
-  <script>
-    const domParty = new DomParty({ position: "relative" });
-    p(`festival.glitches.me`)
-      .color([0, 0.5], 0.1, 1).shadow().bg([1, 0], 1, 0).size(40).parent("#bighead")
-      .font("VT323").scrollX([0, 0.1]).out(0)
-  </script>
+  <script src="bundle.js"></script>
 </body>
 
 </html>

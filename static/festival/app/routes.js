@@ -1,11 +1,14 @@
 module.exports = function (state, emitter) {
   emitter.on("render", () => {
+    console.log("rendered");
   });
 
   emitter.on("navigate", () => {
-    p(`festival.glitches.me`)
-  .color([0, 0.5], 0.1, 1).shadow().bg([1, 0], 1, 0).size(40).parent("#bighead")
-  .font("VT323").scrollX([0, 0.1]).out(0)
+    console.log("navigated");
+    // let title = `festival.`;
+    // if (state.route !== "/") {
+    //   title = state.route + ".";
+    // }
 
     // const isWelcome = state.params.mode === undefined;
     // const isEditor = state.params.mode == "remix" || state.params.mode == "new";

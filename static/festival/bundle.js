@@ -45,12 +45,15 @@ const domParty = new DomParty({ position: "relative" });
 },{"./routes.js":2,"./views/tickets.js":3,"./views/welcome.js":4,"choo":7,"choo/html":6}],2:[function(require,module,exports){
 module.exports = function (state, emitter) {
   emitter.on("render", () => {
+    console.log("rendered");
   });
 
   emitter.on("navigate", () => {
-    p(`festival.glitches.me`)
-  .color([0, 0.5], 0.1, 1).shadow().bg([1, 0], 1, 0).size(40).parent("#bighead")
-  .font("VT323").scrollX([0, 0.1]).out(0)
+    console.log("navigated");
+    // let title = `festival.`;
+    // if (state.route !== "/") {
+    //   title = state.route + ".";
+    // }
 
     // const isWelcome = state.params.mode === undefined;
     // const isEditor = state.params.mode == "remix" || state.params.mode == "new";
@@ -88,8 +91,12 @@ const html = require("choo/html");
 
 // export module
 module.exports = function (state, emit) {
+  state.bighead = p([`tickets.`, `glitches.me`])
+    .color([0, 0.5], 0.1, 1).shadow().bg([1, 0], 1, 0).size(40)//.parent("#bighead")
+    .font("VT323").scrollX([0, 0.1]).out(0)
   return html`
     <div>
+    ${state.bighead}
     <p>April 25, 2021 - March 31, 2022</p>
     <h2>Tickets</h2>
     <p>Tickets are a form of paper, which is processed fibers, that is printed with ink with a unique code that manifests the validity of the token.</p>
@@ -103,9 +110,13 @@ const html = require("choo/html");
 
 // export module
 module.exports = function (state, emit) {
+  state.bighead = p([`festival.`, `glitches.me`])
+    .color([0, 0.5], 0.1, 1).shadow().bg([1, 0], 1, 0).size(40)//.parent("#bighead")
+    .font("VT323").scrollX([0, 0.1]).out(0)
   const blah = `The first edition of festival.glitches.me is an independent festival that investigates body, network and digitality through manifestation and question around institutions and the current society that form what is perceived as artistic activities and critically propose methodologies to speculate ideas that pose significant impact to cultural domains.`
   return html`
     <div>
+    ${state.bighead}
     <p>April 25, 2021 - March 31, 2022</p>
     <p>${blah}</p>
     <h2>Artists</h2>

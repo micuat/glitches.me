@@ -203,8 +203,8 @@
       } else {
         this.m.m42 = -(((-this.m.m42 + 0.5) % 1) - 0.5);
       }
-      this.m.m41 *= window.innerWidth;
-      this.m.m42 *= window.innerHeight;
+      this.m.m41 *= this.domParty.parent.clientWidth;
+      this.m.m42 *= this.domParty.parent.clientHeight;
       this.elt.style.transform = this.m;
     }
     updateStyles(force = false) {

@@ -9,9 +9,19 @@
   <script>
     const domParty = new DomParty();
 
-    let x = 0;
-    let y = 0;
-    p(["Einige Kartoffeln flogen nach Südamerika,","um neue Freunde kennen zu lernen."]).shadow()//.scrollX(()=>Math.random()*0.01).scrollY(-0.2)
+    const a = [
+      "Einige Kartoffeln flogen nach Südamerika, um neue Freunde kennen zu lernen.",
+      "...",
+      "Keiner hat Kartoffeln gegessen, weil sie sympathisch sind.",
+      "...",
+      "Für die Ausstellung, haben sie auf den Tisch 800 Kartoffeln gelegt.",
+      "...",
+      "Eine Kartoffel hat eine Geschichte gelesen, die eine Möhre geschrieben hat.",
+      "...",
+      "Die Kartoffel hat verstanden, dass sie in die Suppe gekocht wird.",
+      "...",
+    ].fast(0.5)
+    p(a)//.shadow()
       .color(0).size(30).out(0)
   </script>
 </body>

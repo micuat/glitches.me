@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://your-web.glitches.me/dom-party.js"></script>
+</head>
+
+<body style="overflow: hidden; margin: 0; padding: 0">
+  <script>
+    const domParty = new DomParty();
+
+    osc(50, 0.1, 0.7).modulateRotate(osc(30).kaleid(99)).color(1, 0, 1)
+      .scale(1, () => window.innerHeight / window.innerWidth).out()
+    canvas().out(0)
+    p(["collective", "depression"]).shadow(3)
+      .color([1, 0].smooth(), 0.1, [0.5, 1].smooth()).size(30).rotate(0, 0.3).out(1)
+
+    let last = document.referrer;
+    if (last == "") last = "https://glitches.me/"
+    p(`back to <a href="${last}">${last}</a>`)
+      .scrollY(0.4).color(0.5, 0.1, 1).size(10).bg(1, 1, 1, 0.4).out(2)
+  </script>
+</body>
+
+</html>

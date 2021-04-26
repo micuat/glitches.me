@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Free Poem | Poemhub</title>
+  <title>Free Poem Videos & Text Movies | Poemhub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
     </menu>
     <heading>
       <h1>Poem<span class="phub roundy">hub</span></h1>
-      <input id="searchInput" class="roundy" type="text" placeholder="Search 3,168,865 poems...">
+      <input id="searchInput" class="roundy" type="text" placeholder="Search 2 poems...">
       <button id="headerUploadBtn" class="greyButton roundy">Upload</button>
       <button id="headerUpgradePremiumBtn" class="orangeButton roundy">★ Upgrade</button>
 
@@ -51,18 +51,19 @@
     <div id="hotVideosSection">
       <ul>
         <li>
-          <a href="https://academics.glitch.me/#/">
-            <img src="https://img.glitches.me/images/2021/04/26/image.png">
-            Can academic writing be poetic?</a>
-        </li>
-        <li>
           <a href="https://kartoffel.glitches.me/">
             <img
             src="https://c1.peakpx.com/wallpaper/648/722/548/potatoes-potato-potatoe-agriculture-wallpaper-preview.jpg">
             Return of Kartoffeln</a>
         </li>
+        <li>
+          <a href="https://academics.glitch.me/#/">
+            <img src="https://img.glitches.me/images/2021/04/26/image.png">
+            Can academic writing be poetic?</a>
+        </li>
       </ul>
     </div>
+    <p>website maintained by <a href="https://glitches.me">glitches.me</a></p>
   </div>
   <script>
     const domParty = new DomParty( { parent: document.getElementById("party-room") });
@@ -70,7 +71,7 @@
       .scrollX(() => Math.sin(time * 3.14) * 0.1 - 0.1)
       // .scrollY(.4)
       .out()
-    p("Hub").weight("bold").color(0).bg(1, .6, 0)
+    p("hub").weight("bold").color(0).bg(1, .6, 0)
       .rotate(-1)
       .scrollX(() => Math.pow(Math.sin(time * 3.14) * 0.5 + 0.5, 4) * (Math.random() * 0.03))
       // .scrollY(.4)

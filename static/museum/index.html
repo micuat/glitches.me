@@ -1,20 +1,30 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://glitches.me/dom-party.js"></script>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet">  -->
+  <script src="https://your-web.glitches.me/dom-party.js"></script>
 </head>
 
 <body style="overflow: hidden">
   <script>
-    p(`museum.glitches.me`)
-      .color(0.5, 0.1, 1).size(40).scrollY(-0.4).out(2)
+    const domParty = new DomParty({});
+
+    p(`museum.glitches.me`)//.font("Playfair Display SC")
+      .color(0).decor("italic").size(40).scrollY(-0.4).out(2)
+    p(`museum.glitches.me is a network of museums yet itself being a museum, conceptually and virtually.`)
+      .color(0).size(20).bg(1, 1, 1, 0.1).scrollY(-0).out(3)
     p(`under construction`)
-      .shadow().rotate(0, 1).scrollX(0).color(0.5, 0.1, 1).size(50).out(3)
+      .shadow().rotate(0, 1).scrollX(0).color(0.5, 0.1, 1).size(50).out(0)
     let last = document.referrer;
-    if(last == "") last = "https://glitches.me/"
-    p(`back to <a href="${last}">${last}</a>`)
-      .scrollY(0.4).color(0.5, 0.1, 1).size(30).bg(1, 1, 1, 0.4).out(1)
+    if (last == "") last = "https://glitches.me/"
+    p(`visit<br>
+    <a style="color: black" href="https://virtual-exhibition-004.glitch.me/">Virtual Exhibition 004</a><br>
+    <a style="color: black" href="https://virtual-exhibition-005.glitch.me/">Virtual Exhibition 005</a> (permanently under construction)<br>
+    <a style="color: black" href="https://virtual-exhibition-007.glitch.me/">Virtual Exhibition 007</a><br>
+    back to<br><a style="color: black" href="${last}">${last}</a>`)
+      .scrollY(0.3).color(0).size(15).bg(1, 1, 1, 0.4).out(1)
   </script>
 </body>
 

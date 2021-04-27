@@ -24,7 +24,7 @@ module.exports = function (state, emit) {
           <img src="http://94.136.16.62/~hydrogen/wiki/images/profile.jpg">
           Naoto Hieda</a></li>
         <li>
-        <img src="https://img.glitches.me/images/2021/04/26/imageae7d6dcf8134eced.th.png">
+        <img src="https://img.glitches.me/images/2021/04/26/imageae7d6dcf8134eced.png">
         NH</li>
         <li>more to be announced</li>
       </ul>
@@ -34,12 +34,15 @@ module.exports = function (state, emit) {
     <div class="gridy">
       <ul>
         <li>
-        <img src="https://img.glitches.me/images/2021/04/26/image7d400fea9c7b7cd5.th.png">
+        <img src="https://img.glitches.me/images/2021/04/26/image7d400fea9c7b7cd5.png">
         April 25, 2021: Soft Opening (Website Launch)</li>
         <li><a href="https://depression.glitches.me/">
-        <img src="https://img.glitches.me/images/2021/04/26/image8daef8001ccc12ac.th.png">
+        <img src="https://img.glitches.me/images/2021/04/26/image8daef8001ccc12ac.png">
         April 26, 2021 - March 31, 2022: Collective depressing session (24/7)
         </a></li>
+        <li>
+        <img src="https://img.glitches.me/images/2021/04/27/Screenshot-from-2021-04-27-13-05-21.png">
+        April 27, 2021: Lecture at Ctrl-Space</li>
         <li>
         <img src="https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png">
         TBA: Best Practices in Contemporary Dance (Practice)</li>
@@ -59,14 +62,14 @@ module.exports = function (state, emit) {
     <div class="gridy">
       <ul>
         <li><a href="https://glitches.me">
-        <img src="https://img.glitches.me/images/2021/04/26/imageaeaf7c70602b2a9c.th.png">
+        <img src="https://img.glitches.me/images/2021/04/26/imageaeaf7c70602b2a9c.png">
         glitches.me</a></li>
         <li><a href="https://museum.glitches.me">
-        <img src="https://img.glitches.me/images/2021/04/26/image59fe6dd6c28b94f5.th.png">
+        <img src="https://img.glitches.me/images/2021/04/26/image59fe6dd6c28b94f5.png">
         museum.glitches.me</a></li>
         <li>
         <a href="https://poemhub.glitches.me/">
-        <img src="https://img.glitches.me/images/2021/04/26/image69b89e64c7173b40.th.png">
+        <img src="https://img.glitches.me/images/2021/04/26/image69b89e64c7173b40.png">
         Poemhub
         </a></li>
       </ul>

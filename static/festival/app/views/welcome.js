@@ -26,7 +26,7 @@ module.exports = function (state, emit) {
         <li>
         <img src="https://img.glitches.me/images/2021/04/26/imageae7d6dcf8134eced.png">
         NH</li>
-        <li>more to be announced</li>
+        <li>more to be announced...</li>
       </ul>
     </div>
 
@@ -43,12 +43,15 @@ module.exports = function (state, emit) {
         <li>
         <img src="https://img.glitches.me/images/2021/04/27/Screenshot-from-2021-04-27-13-05-21.png">
         April 27, 2021: Talk at Ctrl-Space</li>
+        <li><a href="https://www.youtube.com/watch?v=kC-7hzK0jgM">
+        <img src="https://img.glitches.me/images/2021/04/28/vlcsnap-2021-04-28-17h25m17s756.png">
+        April 28, 2021: Best Practices in Contemporary Dance (Chat)</a></li>
         <li>
         <img src="https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png">
-        TBA: Best Practices in Contemporary Dance (Practice)</li>
+        Recurring: Best Practices in Contemporary Dance (Practice)</li>
         <li>
         <img src="https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201005chat.jpg">
-        TBA: Best Practices in Contemporary Dance (Chat)</li>
+        Recurring: Best Practices in Contemporary Dance (Chat)</li>
       </ul>
     </div>
     
@@ -71,6 +74,11 @@ module.exports = function (state, emit) {
         <a href="https://poemhub.glitches.me/">
         <img src="https://img.glitches.me/images/2021/04/26/image69b89e64c7173b40.png">
         Poemhub
+        </a></li>
+        <li>
+        <a href="http://khm.de/">
+        <img src="https://en.khm.de/d694dd4a83c32bccf8cf5457b0996abb./Schwarz_Film_L_Var-3.png?v=2">
+        KHM
         </a></li>
       </ul>
     </div>

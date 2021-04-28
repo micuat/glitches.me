@@ -13,7 +13,7 @@ h2 {
 }
 
 a {
-  background-color: plum;
+/*  background-color: plum;*/
   text-decoration: none;
   color: black;
   font-weight: 700;
@@ -21,7 +21,7 @@ a {
 
 a:hover {
   background-color: black;
-  color: plum;
+  color: white;
 }
 
 #main {

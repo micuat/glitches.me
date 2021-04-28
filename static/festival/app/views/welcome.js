@@ -42,7 +42,7 @@ module.exports = function (state, emit) {
         </a></li>
         <li>
         <img src="https://img.glitches.me/images/2021/04/27/Screenshot-from-2021-04-27-13-05-21.png">
-        April 27, 2021: Lecture at Ctrl-Space</li>
+        April 27, 2021: Talk at Ctrl-Space</li>
         <li>
         <img src="https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png">
         TBA: Best Practices in Contemporary Dance (Practice)</li>

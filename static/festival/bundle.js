@@ -42,6 +42,21 @@ app.mount("#app");
 
 const domParty = new DomParty({ position: "relative" });
 
+src(o0).modulate(
+  osc(6,0,1.5).brightness(-.5).modulate(noise().sub(gradient()),1),0.01
+).layer(
+  osc(20,0.03).thresh(0.9,0).luma(0.5,0)
+  .layer(osc(30,0.03).thresh(0.8,0).luma(0.5,0).invert()
+  ).modulate(osc(1,.1),0.3)
+  .modulateRotate(osc(2,.03).kaleid(999),3)
+  // .mult(osc(30,0.1,1.5))
+  .rotate(Math.PI/4)
+  .modulatePixelate(o0, -1000, 1024)
+).out()
+let h = canvas().parent("#backtex").out(1)
+h.style.height = "100vh";
+h.children[0].style.height = "100vh"
+
 },{"./routes.js":2,"./views/tickets.js":3,"./views/welcome.js":4,"choo":7,"choo/html":6}],2:[function(require,module,exports){
 module.exports = function (state, emitter) {
   emitter.on("render", () => {
@@ -97,10 +112,23 @@ module.exports = function (state, emit) {
   return html`
     <div>
     ${state.bighead}
-    <p>April 25, 2021 - March 31, 2022</p>
+
+    <section>
+    <p>Dates: April 25, 2021 - March 31, 2022</p>
+    </section>
+
+    <div class="hline"></div>
+
+    <section>
     <h2>Tickets</h2>
     <p>Tickets are a form of paper, which is processed fibers, that is printed with ink with a unique code that manifests the validity of the token.</p>
+    </section>
+
+    <div class="hline"></div>
+
+    <section>
     <p><a href="/">back</a></p>
+    </section>
     </div>
     `;
 };
@@ -117,13 +145,23 @@ module.exports = function (state, emit) {
   return html`
     <div>
     ${state.bighead}
-    <p>April 25, 2021 - March 31, 2022</p>
+
+    <section>
+    <p>Dates: April 25, 2021 - March 31, 2022</p>
     <p>${blah}</p>
+    </section>
+
+    <div class="hline"></div>
     
+    <section>
     <h2>Code of Conduct</h2>
     <p>We support the <a href="https://berlincodeofconduct.org/">Berlin Code of Conduct</a>. Please make sure you agree with its content - we will not tolerate any harassment. If you have any questions, please contact the organizers.
     </p>
+    </section>
+
+    <div class="hline"></div>
     
+    <section>
     <h2>Artists</h2>
     <div class="gridy">
       <ul>
@@ -136,7 +174,11 @@ module.exports = function (state, emit) {
         <li>more to be announced...</li>
       </ul>
     </div>
+    </section>
 
+    <div class="hline"></div>
+
+    <section>
     <h2>Events</h2>
     <div class="gridy">
       <ul>
@@ -161,13 +203,25 @@ module.exports = function (state, emit) {
         Recurring: Best Practices in Contemporary Dance (Chat)</li>
       </ul>
     </div>
+    </section>
+
+    <div class="hline"></div>
     
+    <section>
     <h2>Tickets</h2>
     <p>Get your ticket <a href="/#tickets">here!</a></p>
+    </section>
+
+    <div class="hline"></div>
     
+    <section>
     <h2>Open Call</h2>
     <p>call me at mail@naotohieda.com</p>
+    </section>
+
+    <div class="hline"></div>
     
+    <section>
     <h2>Partners</h2>
     <div class="gridy">
       <ul>
@@ -189,6 +243,7 @@ module.exports = function (state, emit) {
         </a></li>
       </ul>
     </div>
+    </section>
 
     </div>
     `;

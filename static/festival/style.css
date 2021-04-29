@@ -28,11 +28,118 @@ a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
+  position: absolute;
 }
 
-#container {
-  max-width: 768px;
+#backtex {
+  background-color: black;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
+
+canvas {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+#container {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 768px;
+  /* margin: 20px 0 20px 0; */
+  padding: 0 10px 0 10px;
+}
+
+section {
+  padding: 20px 0 50px 0;
+  margin: 20px 0 50px 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 0 15px #000;
+  -webkit-box-shadow: 0 0 15px #000;
+}
+
+.hline {
+  width: 50%;
+  height: 3px;
+  margin: 0 auto;
+  /* background: black; */
+  /*background-image: linear-gradient(to right, white, black, black, white); */
+  display: block;
+  position: relative;
+  top: 10px;
+}
+/* 
+    background: -webkit-linear-gradient(
+    left,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  background: -o-linear-gradient(
+    right,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  background: -moz-linear-gradient(
+    right,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 400% 400%;
+  -webkit-animation: gradientBG 100s infinite alternate;
+  animation: gradientBG 100s infinite alternate;
+  animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+} */
 
 .gridy > ul {
   /* text-transform: uppercase; */

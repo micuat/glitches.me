@@ -10,13 +10,23 @@ module.exports = function (state, emit) {
   return html`
     <div>
     ${state.bighead}
-    <p>April 25, 2021 - March 31, 2022</p>
+
+    <section>
+    <p>Dates: April 25, 2021 - March 31, 2022</p>
     <p>${blah}</p>
+    </section>
+
+    <div class="hline"></div>
     
+    <section>
     <h2>Code of Conduct</h2>
     <p>We support the <a href="https://berlincodeofconduct.org/">Berlin Code of Conduct</a>. Please make sure you agree with its content - we will not tolerate any harassment. If you have any questions, please contact the organizers.
     </p>
+    </section>
+
+    <div class="hline"></div>
     
+    <section>
     <h2>Artists</h2>
     <div class="gridy">
       <ul>
@@ -29,7 +39,11 @@ module.exports = function (state, emit) {
         <li>more to be announced...</li>
       </ul>
     </div>
+    </section>
 
+    <div class="hline"></div>
+
+    <section>
     <h2>Events</h2>
     <div class="gridy">
       <ul>
@@ -54,13 +68,25 @@ module.exports = function (state, emit) {
         Recurring: Best Practices in Contemporary Dance (Chat)</li>
       </ul>
     </div>
+    </section>
+
+    <div class="hline"></div>
     
+    <section>
     <h2>Tickets</h2>
     <p>Get your ticket <a href="/#tickets">here!</a></p>
+    </section>
+
+    <div class="hline"></div>
     
+    <section>
     <h2>Open Call</h2>
     <p>call me at mail@naotohieda.com</p>
+    </section>
+
+    <div class="hline"></div>
     
+    <section>
     <h2>Partners</h2>
     <div class="gridy">
       <ul>
@@ -82,6 +108,7 @@ module.exports = function (state, emit) {
         </a></li>
       </ul>
     </div>
+    </section>
 
     </div>
     `;

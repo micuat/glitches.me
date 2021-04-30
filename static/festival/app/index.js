@@ -50,8 +50,24 @@ src(o0).modulate(
   .modulateRotate(osc(2,.03).kaleid(999),3)
   // .mult(osc(30,0.1,1.5))
   .rotate(Math.PI/4)
-  .modulatePixelate(o0, -1000, 1024)
+  .modulatePixelate(src(o0).pixelate(24,24), -1000, 1024)
 ).out()
 let h = canvas().parent("#backtex").out(1)
 h.style.height = "100vh";
 h.children[0].style.height = "100vh"
+
+
+const urlParams = new URLSearchParams(window.location.search);
+let code = "";
+const c = urlParams.get("code");
+if (c !== null) code = decodeURIComponent(atob(c));
+
+let enc = "";
+
+function codeit(code) {
+  enc = btoa(encodeURIComponent(code));
+  console.log(enc);
+  eval(code);
+}
+
+codeit(code);

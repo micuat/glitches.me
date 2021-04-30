@@ -6,12 +6,13 @@ module.exports = function (state, emit) {
   state.bighead = p([`festival.`, `glitches.me`])
     .color([0, 0.5], 0.1, 1).shadow().bg([1, 0], 1, 0).size(40)//.parent("#bighead")
     .font("VT323").scrollX([0, 0.1]).out(0)
-  const blah = `The first edition of festival.glitches.me is an independent festival that investigates body, network and digitality through manifestation and question around institutions and the current society that form what is perceived as artistic activities and critically propose methodologies to speculate ideas that pose significant impact to cultural domains.`
+  const blah = html`The first edition of <b>festival.glitches.me</b> is an independent festival that investigates body, network and digitality through manifestation and question around institutions and the current society that form what is perceived as artistic activities and critically propose methodologies to speculate ideas that pose significant impact to cultural domains.`
   return html`
     <div>
     ${state.bighead}
 
     <section>
+    <h2>What</h2>
     <p>Dates: April 25, 2021 - March 31, 2022</p>
     <p>${blah}</p>
     </section>
@@ -60,9 +61,15 @@ module.exports = function (state, emit) {
         <li><a href="https://www.youtube.com/watch?v=kC-7hzK0jgM">
         <img src="https://img.glitches.me/images/2021/04/28/vlcsnap-2021-04-28-17h25m17s756.png">
         April 28, 2021: Best Practices in Contemporary Dance (Chat)</a></li>
+        <li><a href="https://arium.xyz/spaces/nh">
+        <img src="https://assets.vlts.pw/spaceUserAssets/nh/LQRdaF5y37cNtpe646xWF4GUXit2/default-meta-mlQBma4e.jpg">
+        April 28, 2021: Intervention in Arium</a></li>
+        <li><a href="https://hydra-xml.glitch.me/">
+        <img src="https://img.glitches.me/images/2021/04/30/Screenshot-from-2021-04-30-22-53-14.png">
+        April 30, 2021: hydra-xml</a></li>
         <li>
         <img src="https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png">
-        Recurring: Best Practices in Contemporary Dance (Practice)</li>
+        May 1, 2021: Best Practices in Contemporary Dance (Practice)</li>
         <li>
         <img src="https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201005chat.jpg">
         Recurring: Best Practices in Contemporary Dance (Chat)</li>

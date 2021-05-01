@@ -208,12 +208,9 @@ module.exports = function (state, emit) {
         <li><a href="https://hydra-xml.glitch.me/">
         <img src="https://img.glitches.me/images/2021/04/30/Screenshot-from-2021-04-30-22-53-14.png">
         April 30, 2021: hydra-xml</a></li>
-        <li>
-        <img src="https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png">
-        May 1, 2021: Best Practices in Contemporary Dance (Practice)</li>
-        <li>
-        <img src="https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201005chat.jpg">
-        Recurring: Best Practices in Contemporary Dance (Chat)</li>
+        <li><a href="https://youtu.be/fqxNOgyhucI">
+        <img src="https://img.glitches.me/images/2021/05/01/vlcsnap-2021-05-01-17h41m49s064.png">
+        May 1, 2021: Best Practices in Contemporary Dance (Development, Practice & Chat)</a></li>
       </ul>
     </div>
     </section>

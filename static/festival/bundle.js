@@ -42,17 +42,17 @@ app.mount("#app");
 
 const domParty = new DomParty({ position: "relative" });
 
-src(o0).modulate(
+src(o1).modulate(
   osc(6,0,1.5).brightness(-.5).modulate(noise().sub(gradient()),1),0.01
 ).layer(
-  osc(20,0.03).thresh(0.9,0).luma(0.5,0)
-  .layer(osc(30,0.03).thresh(0.8,0).luma(0.5,0).invert()
+  osc(9,0.03).thresh(0.1,0).luma(0.5,0)
+  .layer(osc(10,0.03).thresh(0.9,0).luma(0.5,0).invert()
   ).modulate(osc(1,.1),0.3)
-  .modulateRotate(osc(2,.03).kaleid(999),3)
-  // .mult(osc(30,0.1,1.5))
-  .rotate(Math.PI/4)
-  .modulatePixelate(src(o0).pixelate(24,24), -1000, 1024)
-).out()
+  .modulateRotate(osc(2,.03).kaleid(999),
+  () => document.body.scrollTop / 500 - .1)
+  .modulatePixelate(src(o1).pixelate(24,24), -1000, 1064)
+).out(o1)
+src(o1).invert().out(o0)
 let h = canvas().parent("#backtex").out(1)
 h.style.height = "100vh";
 h.children[0].style.height = "100vh"
@@ -210,7 +210,10 @@ module.exports = function (state, emit) {
         May 3, 2021: Best Practices in Contemporary Dance (Chat)</a></li>
         <li>
         <img src="https://img.glitches.me/images/2021/05/04/vlcsnap-2021-05-04-21h56m37s298.png">
-        May 4, 2021: Talk at "Cats" seminar</li>
+        May 4, 2021: Talk at "Cats"</li>
+        <li>
+        <img src="https://img.glitches.me/images/2021/05/05/image.png">
+        May 5, 2021: Talk at "Together"</li>
       </ul>
     </div>
     </section>
@@ -241,7 +244,7 @@ module.exports = function (state, emit) {
         Poemhub
         </a></li>
         <li>
-        <a href="http://khm.de/">
+        <a href="https://khm.glitches.me/">
         <img src="https://en.khm.de/d694dd4a83c32bccf8cf5457b0996abb./Schwarz_Film_L_Var-3.png?v=2">
         KHM
         </a></li>

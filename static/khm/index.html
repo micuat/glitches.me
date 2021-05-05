@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://your-web.glitches.me/dom-party.js"></script>
+</head>
+
+<body style="overflow: hidden">
+  <script>
+    const domParty = new DomParty();
+
+    canvas().bg(0,0,0).scale(0.2).scroll(0.1,0.1).shadow().out(0)
+
+    p(["K", "H", "M"].fast(2))//.shadow()
+      .color(0).size(150).out(3)
+
+    p(`are you looking for <a style="color: black" href="http://khm.de">Kunsthochschule für Medien?</a>`)
+    .scrollY(-0.3).size(15).out(1)
+
+    let last = document.referrer;
+    if (last == "") last = "https://glitches.me/"
+    p(`back to<br><a style="color: black" href="${last}">${last}</a>`)
+      .scrollY(0.3).color(0).size(15).bg(1, 1, 1, 0.4).out(2)
+  </script>
+</body>
+
+</html>

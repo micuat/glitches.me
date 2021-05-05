@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Sinistre StCaroline";
+  src: url("https://cdn.glitches.me/Sinistre-StCaroline.woff2") format("woff2"),
+  url("https://cdn.glitches.me/Sinistre-StCaroline.woff") format("woff");
+}
+
+html, body {
+  font-family: "Sinistre StCaroline";
+}

@@ -17,16 +17,12 @@ module.exports = function (state, emit) {
     <p>${blah}</p>
     </section>
 
-    <div class="hline"></div>
-    
     <section>
     <h2>Code of Conduct</h2>
     <p>We support the <a href="https://berlincodeofconduct.org/">Berlin Code of Conduct</a>. Please make sure you agree with its content - we will not tolerate any harassment. If you have any questions, please contact the organizers.
     </p>
     </section>
 
-    <div class="hline"></div>
-    
     <section>
     <h2>Artists</h2>
     <div class="gridy">
@@ -41,8 +37,6 @@ module.exports = function (state, emit) {
       </ul>
     </div>
     </section>
-
-    <div class="hline"></div>
 
     <section>
     <h2>Events</h2>
@@ -70,26 +64,26 @@ module.exports = function (state, emit) {
         <li><a href="https://youtu.be/fqxNOgyhucI">
         <img src="https://img.glitches.me/images/2021/05/01/vlcsnap-2021-05-01-17h41m49s064.png">
         May 1, 2021: Best Practices in Contemporary Dance (Development, Practice & Chat)</a></li>
+        <li><a href="https://youtu.be/Kx8lVCxXLgA">
+        <img src="https://img.glitches.me/images/2021/05/03/vlcsnap-2021-05-03-17h36m46s282.png">
+        May 3, 2021: Best Practices in Contemporary Dance (Chat)</a></li>
+        <li>
+        <img src="https://img.glitches.me/images/2021/05/04/vlcsnap-2021-05-04-21h56m37s298.png">
+        May 4, 2021: Talk at "Cats" seminar</li>
       </ul>
     </div>
     </section>
 
-    <div class="hline"></div>
-    
     <section>
     <h2>Tickets</h2>
     <p>Get your ticket <a href="/#tickets">here!</a></p>
     </section>
 
-    <div class="hline"></div>
-    
     <section>
     <h2>Open Call</h2>
     <p>call me at mail@naotohieda.com</p>
     </section>
 
-    <div class="hline"></div>
-    
     <section>
     <h2>Partners</h2>
     <div class="gridy">

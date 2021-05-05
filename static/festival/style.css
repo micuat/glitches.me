@@ -1,14 +1,27 @@
+@font-face {
+  font-family: "Sinistre StCaroline";
+  src: url("https://cdn.glitches.me/Sinistre-StCaroline.woff2") format("woff2"),
+  url("https://cdn.glitches.me/Sinistre-StCaroline.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ApfelGrotezk Regular";
+  src: url("https://cdn.glitches.me/ApfelGrotezk-Regular.woff2") format("woff2"),
+  url("https://cdn.glitches.me/ApfelGrotezk-Regular.woff") format("woff");
+}
+
 html,
 body {
-  font-family: Roboto, arial, sans-serif;
+  font-family: "ApfelGrotezk Regular", arial, sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
 }
 
 h2 {
-  font-family: 'Playfair Display SC', serif;
-  font-size: 26pt;
+  font-family: 'Sinistre StCaroline', serif;
+  font-size: 30pt;
+  font-variant-caps: small-caps;
   text-align: center;
 }
 
@@ -22,6 +35,10 @@ a {
 a:hover {
   background-color: black;
   color: white;
+}
+
+p {
+  padding: 0 10px 0 10px;
 }
 
 #main {
@@ -61,85 +78,6 @@ section {
   box-shadow: 0 0 15px #000;
   -webkit-box-shadow: 0 0 15px #000;
 }
-
-.hline {
-  width: 50%;
-  height: 3px;
-  margin: 0 auto;
-  /* background: black; */
-  /*background-image: linear-gradient(to right, white, black, black, white); */
-  display: block;
-  position: relative;
-  top: 10px;
-}
-/* 
-    background: -webkit-linear-gradient(
-    left,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  background: -o-linear-gradient(
-    right,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  background: -moz-linear-gradient(
-    right,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet,
-    red
-  );
-  background: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet,
-    red
-  );
-  background-size: 400% 400%;
-  -webkit-animation: gradientBG 100s infinite alternate;
-  animation: gradientBG 100s infinite alternate;
-  animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -webkit-animation-timing-function: linear;
-}
-
-@-webkit-keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-} */
 
 .gridy > ul {
   /* text-transform: uppercase; */

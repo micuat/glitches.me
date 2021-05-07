@@ -51,7 +51,7 @@ module.exports = function (state, emit) {
         </a></li>
         <li>
         <img src="https://img.glitches.me/images/2021/04/27/Screenshot-from-2021-04-27-13-05-21.png">
-        April 27, 2021: Talk at Ctrl-Space</li>
+        April 27, 2021: Presentation at "Ctrl-Space"</li>
         <li><a href="https://www.youtube.com/watch?v=kC-7hzK0jgM">
         <img src="https://img.glitches.me/images/2021/04/28/vlcsnap-2021-04-28-17h25m17s756.png">
         April 28, 2021: Best Practices in Contemporary Dance (Chat)</a></li>
@@ -69,10 +69,16 @@ module.exports = function (state, emit) {
         May 3, 2021: Best Practices in Contemporary Dance (Chat)</a></li>
         <li>
         <img src="https://img.glitches.me/images/2021/05/04/vlcsnap-2021-05-04-21h56m37s298.png">
-        May 4, 2021: Talk at "Cats"</li>
+        May 4, 2021: Presentation at "Cats"</li>
         <li>
         <img src="https://img.glitches.me/images/2021/05/05/image.png">
-        May 5, 2021: Talk at "Together"</li>
+        May 5, 2021: Presentation at "Together"</li>
+        <li><a href="https://hydra-aframe-anime-4.glitch.me/">
+        <img src="https://img.glitches.me/images/2021/05/07/imagef5eb42879c4ef467.png">
+        May 6, 2021: Hydra A-Frame</a></li>
+        <li>
+        <img src="https://img.glitches.me/images/2021/05/07/image.png">
+        May 7, 2021: Presentation at "Gifts"</li>
       </ul>
     </div>
     </section>

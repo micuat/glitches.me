@@ -220,6 +220,9 @@ module.exports = function (state, emit) {
         <li>
         <img src="https://img.glitches.me/images/2021/05/07/image.png">
         May 7, 2021: Presentation at "Gifts"</li>
+        <li><a href="https://youtu.be/ENmQK0ZCbQw">
+        <img src="https://img.glitches.me/images/2021/05/08/vlcsnap-2021-05-08-19h38m34s258.png">
+        May 8, 2021: Best Practices in Contemporary Dance (Chat)</a></li>
       </ul>
     </div>
     </section>

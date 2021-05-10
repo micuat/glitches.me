@@ -82,6 +82,12 @@ module.exports = function (state, emit) {
         <li><a href="https://youtu.be/ENmQK0ZCbQw">
         <img src="https://img.glitches.me/images/2021/05/08/vlcsnap-2021-05-08-19h38m34s258.png">
         May 8, 2021: Best Practices in Contemporary Dance (Chat)</a></li>
+        <li><a href="https://youtu.be/oGHAVVSmAwc">
+        <img src="https://img.glitches.me/images/2021/05/09/image.png">
+        May 8, 2021: Best Practices... But Alone</a></li>
+        <li><a href="https://youtu.be/wafVx8RiDeE">
+        <img src="https://img.glitches.me/images/2021/05/11/vlcsnap-2021-05-11-01h26m22s384.png">
+        May 10, 2021: Best Practices in Contemporary Dance (Chat)</a></li>
       </ul>
     </div>
     </section>

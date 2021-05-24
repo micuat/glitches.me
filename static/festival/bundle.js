@@ -118,6 +118,31 @@ module.exports = function (state, emitter) {
 },{}],3:[function(require,module,exports){
 module.exports = [
   {
+    title: `May 24, 2021: HDD Revisit: Meshes (Naoto Hieda)`,
+    url: "https://hdd-revisit.glitch.me/#/2021-05-24",
+    img: "https://img.glitches.me/images/2021/05/24/image.png"
+  },
+  {
+    title: `May 20, 2021: Hydra A-Frame+Code (Naoto Hieda)`,
+    url: "https://hydra-aframe-anime-9.glitch.me/",
+    img: "https://img.glitches.me/images/2021/05/24/image27ceb8406241591e.png"
+  },
+  {
+    title: `May 19, 2021: Hydra A-Frame (Naoto Hieda)`,
+    url: "https://hydra-aframe-anime-7.glitch.me/",
+    img: "https://img.glitches.me/images/2021/05/20/image.png"
+  },
+  {
+    title: `May 18, 2021: Flok Replay (Flor de Fuego & Naoto Hieda)`,
+    url: "https://flok-replay.glitch.me/",
+    img: "https://img.glitches.me/images/2021/05/18/image.png"
+  },
+  {
+    title: `May 16, 2021: Let's Bookmark (Naoto Hieda)`,
+    url: "https://lets-bookmark.glitch.me/",
+    img: "https://img.glitches.me/images/2021/05/16/image.png"
+  },
+  {
     title: `May 15, 2021: Intervention at CityLeaks (Naoto Hieda intervening/hijacking installation by Cylvester)`,
     url: "https://www.instagram.com/p/CO5uQLGqKQd/",
     img: "https://img.glitches.me/images/2021/05/15/image.png"

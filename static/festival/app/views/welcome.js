@@ -9,16 +9,34 @@ module.exports = function (state, emit) {
     .color([0, 0.5], 0.1, 1).shadow().bg([1, 0], 1, 0).size(40)//.parent("#bighead")
     .font("VT323").scrollX([0, 0.1]).out(0)
 
-  const scheduleDom = schedule.map((e) => e.url.length > 0 ? html`
-  <li><a href="${e.url}">
-  <img src="${e.img}">
-  ${e.title}
-  </a></li>` : html`
-  <li>
-  <img src="${e.img}">
-  ${e.title}
-  </li>`
-  )
+  let count = 0;
+  let isMore = false;
+  const scheduleDom = schedule.map((e) => {
+    if(count > state.scheduleMax) {
+      isMore = true;
+      return;
+    }
+    count++;
+
+    let img = e.img;
+    // if (img.match(/.*img\.glitches\.me.*png/)) {
+    //   img = img.replace(/png$/, "th.png");
+    // }
+    if (e.url !== undefined && e.url.length > 0) {
+      return html`
+      <li><a href="${e.url}">
+      <img src="${img}">
+      ${e.title}
+      </a></li>`
+    }
+    else {
+      html`
+      <li>
+      <img src="${img}" loading="lazy">
+      ${e.title}
+      </li>`
+    }
+  })
 
   const blah = html`The first edition of <b>festival.glitches.me</b> is an independent festival that investigates body, network and digitality through manifestation and question around institutions and the current society that form what is perceived as artistic activities and critically propose methodologies to speculate ideas that pose significant impact to cultural domains.`
   return html`
@@ -35,6 +53,11 @@ module.exports = function (state, emit) {
     <h2>Code of Conduct</h2>
     <p>We support the <a href="https://berlincodeofconduct.org/">Berlin Code of Conduct</a>. Please make sure you agree with its content - we will not tolerate any harassment. If you have any questions, please contact the organizers.
     </p>
+    </section>
+
+    <section>
+    <div id="khmwebring"></div>
+    <script src="https://rundgang-2021.glitch.me/script.js"></script>
     </section>
 
     <section>
@@ -59,16 +82,17 @@ module.exports = function (state, emit) {
         ${scheduleDom}
       </ul>
     </div>
+    ${isMore?html`<p class="center-text"><a href="/#" onclick=${loadMore}>more...</a></p>`:""}
     </section>
 
     <section>
     <h2>Tickets</h2>
-    <p>Get your ticket <a href="/#tickets">here!</a></p>
+    <p class="center-text">Get your ticket <a href="/#tickets">here!</a></p>
     </section>
 
     <section>
     <h2>Open Call</h2>
-    <p>call me at mail@naotohieda.com</p>
+    <p class="center-text">call me at mail@naotohieda.com</p>
     </section>
 
     <section>
@@ -97,4 +121,9 @@ module.exports = function (state, emit) {
 
     </div>
     `;
+
+    function loadMore() {
+      state.scheduleMax += 10;
+      emit("render");
+    }
 };

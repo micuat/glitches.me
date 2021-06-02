@@ -40,6 +40,8 @@ app.emitter.on("DOMContentLoaded", () => {
 // start app
 app.mount("#app");
 
+app.state.scheduleMax = 10;
+
 const domParty = new DomParty({ position: "relative" });
 
 src(o1).modulate(
@@ -118,6 +120,40 @@ module.exports = function (state, emitter) {
 },{}],3:[function(require,module,exports){
 module.exports = [
   {
+    title: `June 5, 2021: Live Coding Online Workshop (Naoto Hieda)`,
+    url: "https://allyourbase.art/event/live-coding-workshop-with-naoto-hieda/",
+    img: "https://allyourbase.art/wp-content/uploads/2021/05/naoto-workshop.png"
+  },
+  {
+    title: `June 2, 2021: Razio (Guest: lizvlx)`,
+    url: "https://razio.glitch.me/#episodes/lizvlx",
+    img: "https://img.glitches.me/images/2021/06/02/vlcsnap-2021-06-02-12h10m57s598.png"
+  },
+  {
+    title: `May 31, 2021: Presentation at "Ctrl-Space" (Naoto Hieda)`,
+    img: "https://img.glitches.me/images/2021/05/31/image8db2fea0c86a2002.png"
+  },
+  {
+    title: `May 30, 2021: Best Practices in Contemporary Dance: Development, Practice & Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/iUjASqcW74w",
+    img: "https://img.glitches.me/images/2021/05/31/image.png"
+  },
+  {
+    title: `May 29, 2021: osc purist (Naoto Hieda)`,
+    url: "https://hydra.glitches.me/?code=c3JjKG8wKS5jb2xvcigwLjk4NSUyQzAuOTUlMkMwLjk1KS5jb2xvcmFtYSgwLjAwNCklMEElMjAlMjAubW9kdWxhdGUoJTBBJTIwJTIwb3NjKDYlMkMwJTJDMS41KS5tb2R1bGF0ZShzcmMobzApLnN1YihncmFkaWVudCgpKSUyQzEpLmJyaWdodG5lc3MoLS41KSUyQzAuMDAzKS5sYXllciglMEFvc2MoKS5tYXNrKHNoYXBlKDIlMkMwLjElMkMwKSklMEElMjAlMjAubW9kdWxhdGVTY2FsZShvc2MoMSUyQzEpJTJDMyklMEElMjAlMjAubW9kdWxhdGUob3NjKDElMkMwLjQpLmJyaWdodG5lc3MoLS41KS5jb2xvcigwJTJDMSklMkMxKSUwQSUyMCUyMC5tb2R1bGF0ZVJvdGF0ZShvc2MoMiUyQzAuNSklMkMzKSUwQSkub3V0KCk=",
+    img: "https://img.glitches.me/images/2021/05/29/image.png"
+  },
+  {
+    title: `May 28, 2021: The lightest dark is darker than the darkest light (Nien Tzu Weng, remix by Naoto Hieda)`,
+    url: "https://ccov.org/en/explore/showing-nien-tzu-weng/",
+    img: "https://img.glitches.me/images/2021/05/28/vlcsnap-2021-05-28-19h32m26s367.png"
+  },
+  {
+    title: `May 26, 2021: Flok Replay (Flor de Fuego & Naoto Hieda)`,
+    url: "https://flok-replay.glitch.me/#replay/1622061423433",
+    img: "https://img.glitches.me/images/2021/05/27/image.png"
+  },
+  {
     title: `May 24, 2021: HDD Revisit: Meshes (Naoto Hieda)`,
     url: "https://hdd-revisit.glitch.me/#/2021-05-24",
     img: "https://img.glitches.me/images/2021/05/24/image.png"
@@ -149,7 +185,7 @@ module.exports = [
   },
   {
     title: `May 15, 2021: Razio (Guest: So Kanno)`,
-    url: "https://razio.glitch.me/so",
+    url: "https://razio.glitch.me/#episodes/so",
     img: "https://cdn.glitch.com/fce09100-6702-45dd-b818-65dc2117c886%2Fvlcsnap-2021-05-15-18h07m38s102.png?v=1621094936408"
   },
   {
@@ -179,7 +215,7 @@ module.exports = [
   },
   {
     title: `May 11, 2021: Razio (Guest: Luise Flügge)`,
-    url: "https://razio.glitch.me/luise",
+    url: "https://razio.glitch.me/#episodes/luise",
     img: "https://cdn.glitch.com/fce09100-6702-45dd-b818-65dc2117c886%2Fvlcsnap-2021-05-11-23h14m32s972.png?v=1620767699624"
   },
   {
@@ -299,16 +335,34 @@ module.exports = function (state, emit) {
     .color([0, 0.5], 0.1, 1).shadow().bg([1, 0], 1, 0).size(40)//.parent("#bighead")
     .font("VT323").scrollX([0, 0.1]).out(0)
 
-  const scheduleDom = schedule.map((e) => e.url.length > 0 ? html`
-  <li><a href="${e.url}">
-  <img src="${e.img}">
-  ${e.title}
-  </a></li>` : html`
-  <li>
-  <img src="${e.img}">
-  ${e.title}
-  </li>`
-  )
+  let count = 0;
+  let isMore = false;
+  const scheduleDom = schedule.map((e) => {
+    if(count > state.scheduleMax) {
+      isMore = true;
+      return;
+    }
+    count++;
+
+    let img = e.img;
+    // if (img.match(/.*img\.glitches\.me.*png/)) {
+    //   img = img.replace(/png$/, "th.png");
+    // }
+    if (e.url !== undefined && e.url.length > 0) {
+      return html`
+      <li><a href="${e.url}">
+      <img src="${img}">
+      ${e.title}
+      </a></li>`
+    }
+    else {
+      html`
+      <li>
+      <img src="${img}" loading="lazy">
+      ${e.title}
+      </li>`
+    }
+  })
 
   const blah = html`The first edition of <b>festival.glitches.me</b> is an independent festival that investigates body, network and digitality through manifestation and question around institutions and the current society that form what is perceived as artistic activities and critically propose methodologies to speculate ideas that pose significant impact to cultural domains.`
   return html`
@@ -325,6 +379,11 @@ module.exports = function (state, emit) {
     <h2>Code of Conduct</h2>
     <p>We support the <a href="https://berlincodeofconduct.org/">Berlin Code of Conduct</a>. Please make sure you agree with its content - we will not tolerate any harassment. If you have any questions, please contact the organizers.
     </p>
+    </section>
+
+    <section>
+    <div id="khmwebring"></div>
+    <script src="https://rundgang-2021.glitch.me/script.js"></script>
     </section>
 
     <section>
@@ -349,16 +408,17 @@ module.exports = function (state, emit) {
         ${scheduleDom}
       </ul>
     </div>
+    ${isMore?html`<p class="center-text"><a href="/#" onclick=${loadMore}>more...</a></p>`:""}
     </section>
 
     <section>
     <h2>Tickets</h2>
-    <p>Get your ticket <a href="/#tickets">here!</a></p>
+    <p class="center-text">Get your ticket <a href="/#tickets">here!</a></p>
     </section>
 
     <section>
     <h2>Open Call</h2>
-    <p>call me at mail@naotohieda.com</p>
+    <p class="center-text">call me at mail@naotohieda.com</p>
     </section>
 
     <section>
@@ -387,6 +447,11 @@ module.exports = function (state, emit) {
 
     </div>
     `;
+
+    function loadMore() {
+      state.scheduleMax += 10;
+      emit("render");
+    }
 };
 
 },{"./schedule.js":3,"choo/html":7}],6:[function(require,module,exports){

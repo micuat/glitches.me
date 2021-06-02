@@ -39,6 +39,8 @@ app.emitter.on("DOMContentLoaded", () => {
 // start app
 app.mount("#app");
 
+app.state.scheduleMax = 10;
+
 const domParty = new DomParty({ position: "relative" });
 
 src(o1).modulate(

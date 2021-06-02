@@ -1,5 +1,39 @@
 module.exports = [
   {
+    title: `June 5, 2021: Live Coding Online Workshop (Naoto Hieda)`,
+    url: "https://allyourbase.art/event/live-coding-workshop-with-naoto-hieda/",
+    img: "https://allyourbase.art/wp-content/uploads/2021/05/naoto-workshop.png"
+  },
+  {
+    title: `June 2, 2021: Razio (Guest: lizvlx)`,
+    url: "https://razio.glitch.me/#episodes/lizvlx",
+    img: "https://img.glitches.me/images/2021/06/02/vlcsnap-2021-06-02-12h10m57s598.png"
+  },
+  {
+    title: `May 31, 2021: Presentation at "Ctrl-Space" (Naoto Hieda)`,
+    img: "https://img.glitches.me/images/2021/05/31/image8db2fea0c86a2002.png"
+  },
+  {
+    title: `May 30, 2021: Best Practices in Contemporary Dance: Development, Practice & Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/iUjASqcW74w",
+    img: "https://img.glitches.me/images/2021/05/31/image.png"
+  },
+  {
+    title: `May 29, 2021: osc purist (Naoto Hieda)`,
+    url: "https://hydra.glitches.me/?code=c3JjKG8wKS5jb2xvcigwLjk4NSUyQzAuOTUlMkMwLjk1KS5jb2xvcmFtYSgwLjAwNCklMEElMjAlMjAubW9kdWxhdGUoJTBBJTIwJTIwb3NjKDYlMkMwJTJDMS41KS5tb2R1bGF0ZShzcmMobzApLnN1YihncmFkaWVudCgpKSUyQzEpLmJyaWdodG5lc3MoLS41KSUyQzAuMDAzKS5sYXllciglMEFvc2MoKS5tYXNrKHNoYXBlKDIlMkMwLjElMkMwKSklMEElMjAlMjAubW9kdWxhdGVTY2FsZShvc2MoMSUyQzEpJTJDMyklMEElMjAlMjAubW9kdWxhdGUob3NjKDElMkMwLjQpLmJyaWdodG5lc3MoLS41KS5jb2xvcigwJTJDMSklMkMxKSUwQSUyMCUyMC5tb2R1bGF0ZVJvdGF0ZShvc2MoMiUyQzAuNSklMkMzKSUwQSkub3V0KCk=",
+    img: "https://img.glitches.me/images/2021/05/29/image.png"
+  },
+  {
+    title: `May 28, 2021: The lightest dark is darker than the darkest light (Nien Tzu Weng, remix by Naoto Hieda)`,
+    url: "https://ccov.org/en/explore/showing-nien-tzu-weng/",
+    img: "https://img.glitches.me/images/2021/05/28/vlcsnap-2021-05-28-19h32m26s367.png"
+  },
+  {
+    title: `May 26, 2021: Flok Replay (Flor de Fuego & Naoto Hieda)`,
+    url: "https://flok-replay.glitch.me/#replay/1622061423433",
+    img: "https://img.glitches.me/images/2021/05/27/image.png"
+  },
+  {
     title: `May 24, 2021: HDD Revisit: Meshes (Naoto Hieda)`,
     url: "https://hdd-revisit.glitch.me/#/2021-05-24",
     img: "https://img.glitches.me/images/2021/05/24/image.png"
@@ -31,7 +65,7 @@ module.exports = [
   },
   {
     title: `May 15, 2021: Razio (Guest: So Kanno)`,
-    url: "https://razio.glitch.me/so",
+    url: "https://razio.glitch.me/#episodes/so",
     img: "https://cdn.glitch.com/fce09100-6702-45dd-b818-65dc2117c886%2Fvlcsnap-2021-05-15-18h07m38s102.png?v=1621094936408"
   },
   {
@@ -61,7 +95,7 @@ module.exports = [
   },
   {
     title: `May 11, 2021: Razio (Guest: Luise Flügge)`,
-    url: "https://razio.glitch.me/luise",
+    url: "https://razio.glitch.me/#episodes/luise",
     img: "https://cdn.glitch.com/fce09100-6702-45dd-b818-65dc2117c886%2Fvlcsnap-2021-05-11-23h14m32s972.png?v=1620767699624"
   },
   {

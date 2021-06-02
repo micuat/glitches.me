@@ -79,6 +79,10 @@ section {
   -webkit-box-shadow: 0 0 15px #000;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .gridy > ul {
   /* text-transform: uppercase; */
   list-style: none outside none;

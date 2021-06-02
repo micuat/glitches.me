@@ -41,6 +41,8 @@ app.emitter.on("DOMContentLoaded", () => {
 app.mount("#app");
 
 app.state.scheduleMax = 10;
+app.state.webring = html`<div id="khmwebring"></div>`;
+document.body.appendChild(app.state.webring); // ghetto
 
 const domParty = new DomParty({ position: "relative" });
 
@@ -382,8 +384,7 @@ module.exports = function (state, emit) {
     </section>
 
     <section>
-    <div id="khmwebring"></div>
-    <script src="https://rundgang-2021.glitch.me/script.js"></script>
+    ${state.webring}
     </section>
 
     <section>

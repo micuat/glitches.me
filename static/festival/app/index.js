@@ -40,6 +40,8 @@ app.emitter.on("DOMContentLoaded", () => {
 app.mount("#app");
 
 app.state.scheduleMax = 10;
+app.state.webring = html`<div id="khmwebring"></div>`;
+document.body.appendChild(app.state.webring); // ghetto
 
 const domParty = new DomParty({ position: "relative" });
 

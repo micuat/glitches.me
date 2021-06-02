@@ -56,8 +56,7 @@ module.exports = function (state, emit) {
     </section>
 
     <section>
-    <div id="khmwebring"></div>
-    <script src="https://rundgang-2021.glitch.me/script.js"></script>
+    ${state.webring}
     </section>
 
     <section>

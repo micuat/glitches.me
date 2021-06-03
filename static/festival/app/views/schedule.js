@@ -164,7 +164,7 @@ module.exports = [
     img: "https://img.glitches.me/images/2021/04/28/vlcsnap-2021-04-28-17h25m17s756.png"
   },
   {
-    title: `April 27, 2021: Presentation at "Ctrl-Space (Naoto Hieda)"`,
+    title: `April 27, 2021: Presentation at "Ctrl-Space" (Naoto Hieda)`,
     url: "",
     img: "https://img.glitches.me/images/2021/04/27/Screenshot-from-2021-04-27-13-05-21.png"
   },

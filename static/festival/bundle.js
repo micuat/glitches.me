@@ -41,7 +41,7 @@ app.emitter.on("DOMContentLoaded", () => {
 app.mount("#app");
 
 app.state.scheduleMax = 10;
-app.state.webring = html`<div id="khmwebring"></div>`;
+app.state.webring = html`<div id="megaring"></div>`;
 document.body.appendChild(app.state.webring); // ghetto
 
 const domParty = new DomParty({ position: "relative" });
@@ -286,7 +286,7 @@ module.exports = [
     img: "https://img.glitches.me/images/2021/04/28/vlcsnap-2021-04-28-17h25m17s756.png"
   },
   {
-    title: `April 27, 2021: Presentation at "Ctrl-Space (Naoto Hieda)"`,
+    title: `April 27, 2021: Presentation at "Ctrl-Space" (Naoto Hieda)`,
     url: "",
     img: "https://img.glitches.me/images/2021/04/27/Screenshot-from-2021-04-27-13-05-21.png"
   },
@@ -340,7 +340,7 @@ module.exports = function (state, emit) {
   let count = 0;
   let isMore = false;
   const scheduleDom = schedule.map((e) => {
-    if(count > state.scheduleMax) {
+    if(count >= state.scheduleMax) {
       isMore = true;
       return;
     }
@@ -358,7 +358,7 @@ module.exports = function (state, emit) {
       </a></li>`
     }
     else {
-      html`
+      return html`
       <li>
       <img src="${img}" loading="lazy">
       ${e.title}
@@ -392,7 +392,7 @@ module.exports = function (state, emit) {
     <div class="gridy">
       <ul>
         <li><a href="https://naotohieda.com">
-          <img src="http://94.136.16.62/~hydrogen/wiki/images/profile.jpg">
+          <img src="https://wiki.glitches.me/images/profile.jpg">
           Naoto Hieda</a></li>
         <li>
         <img src="https://img.glitches.me/images/2021/04/26/imageae7d6dcf8134eced.png">

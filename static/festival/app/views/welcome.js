@@ -12,7 +12,7 @@ module.exports = function (state, emit) {
   let count = 0;
   let isMore = false;
   const scheduleDom = schedule.map((e) => {
-    if(count > state.scheduleMax) {
+    if(count >= state.scheduleMax) {
       isMore = true;
       return;
     }
@@ -30,7 +30,7 @@ module.exports = function (state, emit) {
       </a></li>`
     }
     else {
-      html`
+      return html`
       <li>
       <img src="${img}" loading="lazy">
       ${e.title}
@@ -64,7 +64,7 @@ module.exports = function (state, emit) {
     <div class="gridy">
       <ul>
         <li><a href="https://naotohieda.com">
-          <img src="http://94.136.16.62/~hydrogen/wiki/images/profile.jpg">
+          <img src="https://wiki.glitches.me/images/profile.jpg">
           Naoto Hieda</a></li>
         <li>
         <img src="https://img.glitches.me/images/2021/04/26/imageae7d6dcf8134eced.png">

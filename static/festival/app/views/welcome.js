@@ -59,7 +59,7 @@ module.exports = function (state, emit) {
     ${state.webring}
     </section>
 
-    <section>
+<!--    <section>
     <h2>Artists</h2>
     <div class="gridy">
       <ul>
@@ -72,7 +72,7 @@ module.exports = function (state, emit) {
         <li>more to be announced...</li>
       </ul>
     </div>
-    </section>
+    </section>-->
 
     <section>
     <h2>Events</h2>

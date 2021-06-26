@@ -1,8 +1,81 @@
 module.exports = [
   {
-    title: `June 5, 2021: Live Coding Online Workshop (Naoto Hieda)`,
+    title: `June 25, 2021: MoveApp Event (Cocoon Dance)`,
+    url: "https://www.cocoondance.de/moveapp-event/",
+    img: "https://img.glitches.me/images/2021/06/24/cocoon.png"
+  },
+  {
+    title: `June 22, 2021: Lock Picking Intervention (Naoto Hieda)`,
+    img: "https://img.glitches.me/images/2021/06/22/A27D9479-1B39-4037-9531-39A4B8827A05.jpg"
+  },
+  {
+    title: `June 21, 2021: Hydra Tutorial: Hydra inside webpage 1 (Naoto Hieda)`,
+    url: "https://youtu.be/VGS7HenIA6A",
+    img: "https://img.glitches.me/images/2021/06/22/vlcsnap-2021-06-22-17h00m29s003.png"
+  },
+  {
+    title: `June 20, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/GRZcuvPTqto",
+    img: "https://img.glitches.me/images/2021/06/21/vlcsnap-2021-06-21-13h48m30s096.png"
+  },
+  {
+    title: `June 20, 2021: Best Practices in Contemporary Dance (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/QENHKpPJZew",
+    img: "https://img.glitches.me/images/2021/06/21/vlcsnap-2021-06-21-13h46m47s826.png"
+  },
+  {
+    title: `June 18, 2021: Sound in Bielefeld (Naoto Hieda)`,
+    url: "https://sound-in-aframe-1.glitch.me/",
+    img: "https://img.glitches.me/images/2021/06/18/image4b7876be4f92fa6f.png"
+  },
+  {
+    title: `June 14, 2021: Best Practices in Contemporary Dance: Chat (Pigeon, Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/2gOS750neh4",
+    img: "https://img.glitches.me/images/2021/06/18/vlcsnap-2021-06-18-20h14m29s326.png"
+  },
+  {
+    title: `June 13, 2021: KHM at CityLeaks Extra Showing (KHM)`,
+    img: "https://img.glitches.me/images/2021/06/13/96061AD4-3F6F-46DB-864B-4A3EC9C243EB.jpg"
+  },
+  {
+    title: `June 13, 2021: KHM at CityLeaks Documentation (Naoto Hieda)`,
+    url: "https://khm.glitch.me/#episodes/cityleaks",
+    img: "https://cdn.glitch.com/bcaafd25-974f-486f-9a27-0e4b3bf5dce8%2FIMG_7264.JPG?v=1623577245612"
+  },
+  {
+    title: `June 13, 2021: Flok Replay (Flor de Fuego & Naoto Hieda)`,
+    url: "https://flok-replay.glitch.me/#replay/1623560102222",
+    img: "https://img.glitches.me/images/2021/06/13/image.png"
+  },
+  {
+    title: `June 11, 2021: Best Practices... But Alone (Naoto Hieda)`,
+    url: "https://youtu.be/A5xfVHdT_zI",
+    img: "https://img.glitches.me/images/2021/06/12/vlcsnap-2021-06-12-14h43m37s477.png"
+  },
+  {
+    title: `June 10, 2021: CityLeaks Interview with Tobias Hartmann, Karin Lingnau & Max Schweder (Naoto Hieda)`,
+    url: "https://youtu.be/20mI7zGIX00",
+    img: "https://img.glitches.me/images/2021/06/13/interview.jpg"
+  },
+  {
+    title: `June 6, 2021: Best Practices in Contemporary Dance: Chat (Flor de Fuego, Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/Ecne2NxF5vw",
+    img: "https://img.glitches.me/images/2021/06/06/vlcsnap-2021-06-06-21h52m46s227.png"
+  },
+  {
+    title: `June 6, 2021: Best Practices in Contemporary Dance: Development & Practice (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/AN91uaPxIso",
+    img: "https://img.glitches.me/images/2021/06/06/vlcsnap-2021-06-06-21h54m04s155.png"
+  },
+  {
+    title: `June 5, 2021: Live Coding Online Workshop (Naoto Hieda, photo credit @konstantinjohanneshehl)`,
     url: "https://allyourbase.art/event/live-coding-workshop-with-naoto-hieda/",
-    img: "https://allyourbase.art/wp-content/uploads/2021/05/naoto-workshop.png"
+    img: "https://img.glitches.me/images/2021/06/08/B68D82AB-F6B1-416D-9755-6D2288FF2639.jpg"
+  },
+  {
+    title: `June 3, 2021: Patterns (Naoto Hieda)`,
+    url: "https://hydra.glitches.me/?code=biUzRChzKSUzRCUzRW5vaXNlKHMpLmFkZChub2lzZShzKjIpJTJDMC41KS5hZGQobm9pc2UocyoyKSUyQzAuMiklMEFvc2MoMiUyQzAlMkMxLjUpLm1vZHVsYXRlKHNvbGlkKDIpKS5jb250cmFzdCgyKS5tb2R1bGF0ZSglMEFuKDEuNSkudGhyZXNoKDAuMDUlMkMwLjAzKS5kaWZmKG4oMS41KS50aHJlc2goMCUyQzAuMDMpKSUwQSUyMCUyMC5hZGQobigxLjYpLnRocmVzaCgwLjA0JTJDMC4xKSUyQzAuNSklMEElMjAlMjAuc2NhbGUoMiklMEElMjAlMjAucmVwZWF0KDIlMkMyKSUwQSUyMCUyMC5tb2R1bGF0ZVNjYWxlKG5vaXNlKDQwJTJDMC4xKS5tb2R1bGF0ZVBpeGVsYXRlKCUwQSUyMCUyMCUyMCUyMCUyMCUyMG5vaXNlKDQlMkMuMDEpLnBpeGVsYXRlKDQlMkM0KS50aHJlc2goKSUyQzEyJTJDNCkudGhyZXNoKC0uNSUyQzEpLnBvc3Rlcml6ZSg4KSUyQy0xLjUlMkMyKSUwQSUyMCUyMC5zdWIoZ3JhZGllbnQoKSkuYWRkKCUwQSUyMCUyMCUyMCUyMG5vaXNlKDQwJTJDMC4xKS5tb2R1bGF0ZVBpeGVsYXRlKCUwQSUyMCUyMCUyMCUyMCUyMCUyMG5vaXNlKDQlMkMuMDEpLnBpeGVsYXRlKDQlMkM0KS50aHJlc2goKSUyQzEyJTJDNCklMkMxKSUyQzEpLm91dCgpJTBB",
+    img: "https://img.glitches.me/images/2021/06/03/patterns-LaZ6tzrqwGOmPYVb.png"
   },
   {
     title: `June 2, 2021: Razio (Guest: lizvlx)`,

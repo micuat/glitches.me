@@ -1,8 +1,71 @@
 module.exports = [
   {
+    title: `August 17, 2021: YouTube at Aktion Kölner Litfasssäulen (Naoto Hieda)`,
+    url: "https://en.khm.de/termine/news.5174.khm-open-2021-aktion-kolner-litfaSssaulen/",
+    img: "https://en.khm.de/621ad54e6566da9e138868573b154285.lightbox/Naoto_Hieda_YouTube.png"
+  },
+  {
+    title: `July 31, 2021: Best Practices in Contemporary Dance: Chat at IDOCDE (Jorge Guevara & Naoto Hieda)`,
+    url: "http://www.idocde.net/pages/190",
+    img: "https://img.glitches.me/images/2021/07/09/node-chat.png"
+  },
+  {
+    title: `July 21, 2021: Best Practices in Under Construction (Naoto Hieda & Jorge Guevara)`,
+    img: "https://cdn.glitch.com/c872ab9a-264e-4ce2-91db-721811e90193%2Fnbaustelle.jpg?v=1625779632657"
+  },
+  {
+    title: `July 21, 2021: ＫＨ門 Festival at KHM Open (ctrl-space)`,
+    // url: "https://khmn.khm.de/",
+    img: "https://img.glitches.me/images/2021/07/09/image.png"
+  },
+  {
+    title: `July 21, 2021: netze.khm.de at KHM Open`,
+    // url: "https://netze.khm.de/",
+    img: "https://img.glitches.me/images/2021/07/09/imagecd997762728c4992.png"
+  },
+  {
+    title: `July 20, 2021: Silicon Friend Camp`,
+    url: "https://cwc.radical-openness.org/siliconfriendcamp/",
+    img: "https://img.glitches.me/images/2021/07/09/image459b46bce5aef72e.png"
+  },
+  {
+    title: `July 6, 2021: Best Practices in Contemporary Dance (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/PYbN2FJ3BpU",
+    img: "https://img.glitches.me/images/2021/07/06/vlcsnap-2021-07-06-21h16m27s663.png"
+  },
+  {
+    title: `July 5, 2021: Risograph (Naoto Hieda)`,
+    url: "https://risograph.glitch.me/",
+    img: "https://img.glitches.me/images/2021/07/06/riso.png"
+  },
+  {
+    title: `July 5, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/zDiNIxvz5pw",
+    img: "https://img.glitches.me/images/2021/07/06/vlcsnap-2021-07-06-16h31m34s281.png"
+  },
+  {
+    title: `July 1, 2021: p5imagearray 2 (Naoto Hieda)`,
+    url: "https://p5imagearray-2.glitch.me/",
+    img: "https://img.glitches.me/images/2021/07/02/Screenshot-2021-07-02-at-20-16-27-https-p5imagearray-2-glitch-me.png"
+  },
+  {
+    title: `June 30, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/AgmqO_eD9cc",
+    img: "https://img.glitches.me/images/2021/07/02/vlcsnap-2021-07-02-20h11m17s206.png"
+  },
+  {
+    title: `June 28, 2021: Best Practices in Risograph (Naoto Hieda)`,
+    img: "https://img.glitches.me/images/2021/06/29/678DAE7A-C36E-46A4-A3F9-EC6D475A7286.jpg"
+  },
+  {
     title: `June 25, 2021: MoveApp Event (Cocoon Dance)`,
     url: "https://www.cocoondance.de/moveapp-event/",
     img: "https://img.glitches.me/images/2021/06/24/cocoon.png"
+  },
+  {
+    title: `June 25, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/c6gDV0zb0vw",
+    img: "https://img.glitches.me/images/2021/06/29/vlcsnap-2021-06-29-10h46m53s050.png"
   },
   {
     title: `June 22, 2021: Lock Picking Intervention (Naoto Hieda)`,

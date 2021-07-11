@@ -57,10 +57,6 @@ module.exports = function (state, emit) {
 
     <!--
     <section>
-    ${state.webring}
-    </section>
-
-    <section>
     <h2>Artists</h2>
     <div class="gridy">
       <ul>

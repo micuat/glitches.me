@@ -151,6 +151,11 @@ module.exports = [
     img: "https://img.glitches.me/images/2021/07/09/image459b46bce5aef72e.png"
   },
   {
+    title: `July 10, 2021: Hydra in Svelte Template (Naoto Hieda)`,
+    url: "https://glitch.com/~hydra-svelte",
+    img: "https://img.glitches.me/images/2021/07/11/image.png"
+  },
+  {
     title: `July 6, 2021: Best Practices in Contemporary Dance (Jorge Guevara & Naoto Hieda)`,
     url: "https://youtu.be/PYbN2FJ3BpU",
     img: "https://img.glitches.me/images/2021/07/06/vlcsnap-2021-07-06-21h16m27s663.png"
@@ -520,10 +525,6 @@ module.exports = function (state, emit) {
     </section>
 
     <!--
-    <section>
-    ${state.webring}
-    </section>
-
     <section>
     <h2>Artists</h2>
     <div class="gridy">

@@ -44,5 +44,27 @@ app.get('/hiding/:id', (req, res) => {
   })
 })
 
-https.createServer(options, app).listen(3000);
+const server = https.createServer(options, app)
 
+let picture;
+
+const io = require('socket.io')(server);
+let stat = "UNKNOWN STATUS";
+io.on('connection', client => {
+  client.emit('status', {res: stat});
+  client.emit('picture', picture);
+  client.on('hello', data => {
+    client.emit('welcome', {content: "hi"});
+    client.broadcast.emit('toggle light', {});
+  });
+  client.on('status', data => {
+    stat = data.res;
+    client.broadcast.emit('status', data);
+  });
+  client.on('picture', data => {
+    picture = data;
+    client.broadcast.emit('picture', data);
+  });
+});
+
+server.listen(3000);

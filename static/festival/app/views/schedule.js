@@ -5,7 +5,7 @@ module.exports = [
     img: "https://en.khm.de/621ad54e6566da9e138868573b154285.lightbox/Naoto_Hieda_YouTube.png"
   },
   {
-    title: `July 31, 2021: Best Practices in Contemporary Dance: Chat at IDOCDE (Jorge Guevara & Naoto Hieda)`,
+    title: `July 31, 2021: Best Practices in Contemporary Dance at IDOCDE (Jorge Guevara & Naoto Hieda)`,
     url: "http://www.idocde.net/pages/190",
     img: "https://img.glitches.me/images/2021/07/09/node-chat.png"
   },
@@ -15,13 +15,13 @@ module.exports = [
   },
   {
     title: `July 21, 2021: ＫＨ門 Festival at KHM Open (ctrl-space)`,
-    // url: "https://khmn.khm.de/",
+    url: "http://khmn.khm.de/",
     img: "https://img.glitches.me/images/2021/07/09/image.png"
   },
   {
-    title: `July 21, 2021: netze.khm.de at KHM Open`,
-    // url: "https://netze.khm.de/",
-    img: "https://img.glitches.me/images/2021/07/09/imagecd997762728c4992.png"
+    title: `July 21, 2021: Netze Open at KHM Open (Netze)`,
+    url: "http://netze.khm.de/",
+    img: "https://img.glitches.me/images/2021/07/15/netzenetze.png"
   },
   {
     title: `July 20, 2021: Silicon Friend Camp`,
@@ -29,7 +29,17 @@ module.exports = [
     img: "https://img.glitches.me/images/2021/07/09/image459b46bce5aef72e.png"
   },
   {
-    title: `July 10, 2021: Hydra in Svelte Template (Naoto Hieda)`,
+    title: `July 15, 2021: Best Practices in Contemporary Dance (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/aWIDqTxxy8k",
+    img: "https://img.glitches.me/images/2021/07/16/vlcsnap-2021-07-16-21h01m26s846.png"
+  },
+  {
+    title: `July 12, 2021: Risograph (Naoto Hieda)`,
+    url: "https://risograph.glitch.me/",
+    img: "https://img.glitches.me/images/2021/07/12/2021-07-12-1.png"
+  },
+  {
+    title: `July 10, 2021: Hydra in Svelte - Template (Naoto Hieda)`,
     url: "https://glitch.com/~hydra-svelte",
     img: "https://img.glitches.me/images/2021/07/11/image.png"
   },

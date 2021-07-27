@@ -1,6 +1,7 @@
 const https = require('https');
 const fs = require('fs');
 const path = require('path')
+const fetch = require('node-fetch')
 
 const options = {
   key: fs.readFileSync('/opt/certs/privkey.pem'),
@@ -47,6 +48,7 @@ app.get('/hiding/:id', (req, res) => {
 const server = https.createServer(options, app)
 
 let picture;
+let imgbank = ["062", "064", "066", "068", "070", "077", "082", "106", "111", "112", "119", "120", "121"]
 
 const io = require('socket.io')(server);
 let stat = "UNKNOWN STATUS";
@@ -55,7 +57,7 @@ io.on('connection', client => {
   client.emit('picture', picture);
   client.on('hello', data => {
     client.emit('welcome', {content: "hi"});
-    client.broadcast.emit('toggle light', {});
+    client.broadcast.emit('toggle light', data);
   });
   client.on('status', data => {
     stat = data.res;
@@ -63,6 +65,26 @@ io.on('connection', client => {
   });
   client.on('picture', data => {
     picture = data;
+    if(Math.random() > 0.7) {
+      let a = imgbank[Math.floor(Math.random()*imgbank.length)]
+      data.data = "https://silicon.glitches.me/img/DSCF0"+a+".JPG"
+    }
+    fetch(`https://silicon-friends.glitch.me/image`,{
+  method: 'POST', // or 'PUT'
+  headers: {
+    'Content-Type': 'application/json',
+  },
+//  body: data,
+  body: JSON.stringify({username: "light", imgUrl: data.data}),
+})
+.then(response => response.json())
+.then(data => {
+  console.log('Success:', data);
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
+
     client.broadcast.emit('picture', data);
   });
 });

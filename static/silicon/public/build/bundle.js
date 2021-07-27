@@ -167,6 +167,9 @@ var app = (function () {
     function children(element) {
         return Array.from(element.childNodes);
     }
+    function set_input_value(input, value) {
+        input.value = value == null ? '' : value;
+    }
     function custom_event(type, detail) {
         const e = document.createEvent('CustomEvent');
         e.initCustomEvent(type, false, false, detail);
@@ -176,6 +179,14 @@ var app = (function () {
     let current_component;
     function set_current_component(component) {
         current_component = component;
+    }
+    function get_current_component() {
+        if (!current_component)
+            throw new Error('Function called outside component initialization');
+        return current_component;
+    }
+    function onMount(fn) {
+        get_current_component().$$.on_mount.push(fn);
     }
 
     const dirty_components = [];
@@ -5258,30 +5269,44 @@ var app = (function () {
     const { console: console_1 } = globals;
     const file = "src/App.svelte";
 
-    // (49:0) {#if picture !== undefined}
+    // (109:0) {#if picture !== undefined}
     function create_if_block(ctx) {
     	let section;
     	let img;
     	let img_src_value;
+    	let t0;
+    	let p;
+    	let t1;
 
     	const block = {
     		c: function create() {
     			section = element("section");
     			img = element("img");
-    			attr_dev(img, "class", "fit svelte-1ktba1g");
-    			if (img.src !== (img_src_value = /*picture*/ ctx[1])) attr_dev(img, "src", img_src_value);
-    			add_location(img, file, 50, 0, 1101);
-    			attr_dev(section, "class", "center-section svelte-1ktba1g");
-    			add_location(section, file, 49, 8, 1068);
+    			t0 = space();
+    			p = element("p");
+    			t1 = text(/*results*/ ctx[3]);
+    			attr_dev(img, "class", "fit svelte-15k5jgz");
+    			attr_dev(img, "id", "lightview");
+    			if (img.src !== (img_src_value = /*picture*/ ctx[2])) attr_dev(img, "src", img_src_value);
+    			add_location(img, file, 110, 0, 2638);
+    			attr_dev(p, "class", "svelte-15k5jgz");
+    			add_location(p, file, 111, 0, 2687);
+    			attr_dev(section, "class", "center-section svelte-15k5jgz");
+    			add_location(section, file, 109, 8, 2605);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
     			append_dev(section, img);
+    			append_dev(section, t0);
+    			append_dev(section, p);
+    			append_dev(p, t1);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*picture*/ 2 && img.src !== (img_src_value = /*picture*/ ctx[1])) {
+    			if (dirty & /*picture*/ 4 && img.src !== (img_src_value = /*picture*/ ctx[2])) {
     				attr_dev(img, "src", img_src_value);
     			}
+
+    			if (dirty & /*results*/ 8) set_data_dev(t1, /*results*/ ctx[3]);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(section);
@@ -5292,7 +5317,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(49:0) {#if picture !== undefined}",
+    		source: "(109:0) {#if picture !== undefined}",
     		ctx
     	});
 
@@ -5309,15 +5334,21 @@ var app = (function () {
     	let section;
     	let h1;
     	let t2;
-    	let p;
+    	let p0;
     	let t3;
     	let t4;
     	let t5;
-    	let button;
+    	let p1;
+    	let t6;
+    	let t7_value = (/*status*/ ctx[1] == "ON" ? "OFF" : "ON") + "";
     	let t7;
+    	let t8;
+    	let t9;
+    	let input;
+    	let t10;
     	let mounted;
     	let dispose;
-    	let if_block = /*picture*/ ctx[1] !== undefined && create_if_block(ctx);
+    	let if_block = /*picture*/ ctx[2] !== undefined && create_if_block(ctx);
 
     	const block = {
     		c: function create() {
@@ -5331,36 +5362,42 @@ var app = (function () {
     			h1 = element("h1");
     			h1.textContent = "Hello! I am light :)";
     			t2 = space();
-    			p = element("p");
+    			p0 = element("p");
     			t3 = text("currently I am ");
-    			t4 = text(/*status*/ ctx[0]);
+    			t4 = text(/*status*/ ctx[1]);
     			t5 = space();
-    			button = element("button");
-    			button.textContent = "Toggle light";
-    			t7 = space();
+    			p1 = element("p");
+    			t6 = text("You are turning me ");
+    			t7 = text(t7_value);
+    			t8 = text(" because:");
+    			t9 = space();
+    			input = element("input");
+    			t10 = space();
     			if (if_block) if_block.c();
     			attr_dev(div0, "id", "backteximage");
-    			attr_dev(div0, "class", "svelte-1ktba1g");
-    			add_location(div0, file, 33, 8, 760);
+    			attr_dev(div0, "class", "svelte-15k5jgz");
+    			add_location(div0, file, 85, 8, 2092);
     			attr_dev(div1, "id", "backtex");
-    			attr_dev(div1, "class", "svelte-1ktba1g");
-    			add_location(div1, file, 32, 6, 733);
-    			attr_dev(h1, "class", "svelte-1ktba1g");
-    			add_location(h1, file, 38, 2, 882);
-    			attr_dev(p, "class", "svelte-1ktba1g");
-    			add_location(p, file, 41, 2, 922);
-    			attr_dev(button, "class", "svelte-1ktba1g");
-    			add_location(button, file, 44, 0, 957);
-    			attr_dev(section, "class", "center-section svelte-1ktba1g");
-    			add_location(section, file, 37, 8, 847);
+    			attr_dev(div1, "class", "svelte-15k5jgz");
+    			add_location(div1, file, 84, 6, 2065);
+    			attr_dev(h1, "class", "svelte-15k5jgz");
+    			add_location(h1, file, 90, 2, 2214);
+    			attr_dev(p0, "class", "svelte-15k5jgz");
+    			add_location(p0, file, 93, 2, 2254);
+    			attr_dev(p1, "class", "svelte-15k5jgz");
+    			add_location(p1, file, 101, 0, 2357);
+    			attr_dev(input, "class", "svelte-15k5jgz");
+    			add_location(input, file, 102, 0, 2424);
+    			attr_dev(section, "class", "center-section svelte-15k5jgz");
+    			add_location(section, file, 89, 8, 2179);
     			attr_dev(div2, "id", "container");
-    			attr_dev(div2, "class", "svelte-1ktba1g");
-    			add_location(div2, file, 36, 6, 818);
+    			attr_dev(div2, "class", "svelte-15k5jgz");
+    			add_location(div2, file, 88, 6, 2150);
     			attr_dev(div3, "id", "main");
-    			attr_dev(div3, "class", "svelte-1ktba1g");
-    			add_location(div3, file, 31, 2, 711);
-    			attr_dev(main, "class", "svelte-1ktba1g");
-    			add_location(main, file, 30, 0, 702);
+    			attr_dev(div3, "class", "svelte-15k5jgz");
+    			add_location(div3, file, 83, 2, 2043);
+    			attr_dev(main, "class", "svelte-15k5jgz");
+    			add_location(main, file, 82, 0, 2034);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5375,23 +5412,38 @@ var app = (function () {
     			append_dev(div2, section);
     			append_dev(section, h1);
     			append_dev(section, t2);
-    			append_dev(section, p);
-    			append_dev(p, t3);
-    			append_dev(p, t4);
+    			append_dev(section, p0);
+    			append_dev(p0, t3);
+    			append_dev(p0, t4);
     			append_dev(section, t5);
-    			append_dev(section, button);
-    			append_dev(div2, t7);
+    			append_dev(section, p1);
+    			append_dev(p1, t6);
+    			append_dev(p1, t7);
+    			append_dev(p1, t8);
+    			append_dev(section, t9);
+    			append_dev(section, input);
+    			set_input_value(input, /*message*/ ctx[0]);
+    			append_dev(div2, t10);
     			if (if_block) if_block.m(div2, null);
 
     			if (!mounted) {
-    				dispose = listen_dev(button, "click", /*handleClick*/ ctx[2], false, false, false);
+    				dispose = [
+    					listen_dev(input, "keypress", /*onKeyPress*/ ctx[4], false, false, false),
+    					listen_dev(input, "input", /*input_input_handler*/ ctx[5])
+    				];
+
     				mounted = true;
     			}
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*status*/ 1) set_data_dev(t4, /*status*/ ctx[0]);
+    			if (dirty & /*status*/ 2) set_data_dev(t4, /*status*/ ctx[1]);
+    			if (dirty & /*status*/ 2 && t7_value !== (t7_value = (/*status*/ ctx[1] == "ON" ? "OFF" : "ON") + "")) set_data_dev(t7, t7_value);
 
-    			if (/*picture*/ ctx[1] !== undefined) {
+    			if (dirty & /*message*/ 1 && input.value !== /*message*/ ctx[0]) {
+    				set_input_value(input, /*message*/ ctx[0]);
+    			}
+
+    			if (/*picture*/ ctx[2] !== undefined) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
@@ -5410,7 +5462,7 @@ var app = (function () {
     			if (detaching) detach_dev(main);
     			if (if_block) if_block.d();
     			mounted = false;
-    			dispose();
+    			run_all(dispose);
     		}
     	};
 
@@ -5425,10 +5477,15 @@ var app = (function () {
     	return block;
     }
 
+    function modelLoaded() {
+    	console.log("Model Loaded!");
+    }
+
     function instance($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("App", slots, []);
-    	let message;
+    	let message = "";
+    	let lightmessage = "Toggle light";
     	let status = "UNKNOWN STATUS";
     	let picture;
     	const socket = io("silicon.glitches.me");
@@ -5436,22 +5493,68 @@ var app = (function () {
     	//socket.emit("hello", {})
     	socket.on("welcome", msg => {
     		console.log(msg);
-    		message = msg;
-    	});
+    	}); //message = msg;
 
     	socket.on("status", msg => {
     		console.log(msg);
-    		$$invalidate(0, status = msg.res);
+    		$$invalidate(1, status = msg.res);
+    		if (status == "ON") lightmessage = "Turn me off";
+    		if (status == "OFF") lightmessage = "Turn me on";
     	});
+
+    	let canvas = document.createElement("canvas");
+    	canvas.width = 320;
+    	canvas.height = 240;
+    	let results;
 
     	socket.on("picture", msg => {
-    		console.log(msg);
-    		$$invalidate(1, picture = msg.data);
+    		if (msg != null) {
+    			console.log(msg);
+    			$$invalidate(2, picture = msg.data);
+
+    			if (objectDetector !== undefined) {
+    				var img = new window.Image();
+
+    				img.addEventListener("load", function () {
+    					canvas.getContext("2d").drawImage(img, 0, 0);
+
+    					objectDetector.detect(canvas, (err, r) => {
+    						$$invalidate(3, results = "I see " + r.map(e => e.label).join(","));
+    						console.log(results); // Will output bounding boxes of detected objects
+    						fetch(`https://silicon-friends.glitch.me/new/light/${results}`);
+    					});
+    				});
+
+    				img.setAttribute("src", msg.data);
+    			}
+    		}
     	});
 
-    	function handleClick(e) {
-    		socket.emit("hello", {});
+    	function submit() {
+    		socket.emit("hello", { toggle: true, message });
+    		$$invalidate(0, message = "");
     	}
+
+    	const onKeyPress = e => {
+    		if (e.charCode === 13 && message !== "") submit();
+    	};
+
+    	function handleShutter(e) {
+    		socket.emit("hello", { toggle: false });
+    	}
+
+    	function handleToggle(e) {
+    		if (message !== "") {
+    			submit();
+    		}
+    	}
+
+    	let objectDetector;
+    	objectDetector = ml5.objectDetector("cocossd", {}, modelLoaded);
+
+    	onMount(async () => {
+    		handleShutter();
+    	});
 
     	const writable_props = [];
 
@@ -5459,26 +5562,44 @@ var app = (function () {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1.warn(`<App> was created with unknown prop '${key}'`);
     	});
 
+    	function input_input_handler() {
+    		message = this.value;
+    		$$invalidate(0, message);
+    	}
+
     	$$self.$capture_state = () => ({
+    		onMount,
     		io,
     		message,
+    		lightmessage,
     		status,
     		picture,
     		socket,
-    		handleClick
+    		canvas,
+    		results,
+    		submit,
+    		onKeyPress,
+    		handleShutter,
+    		handleToggle,
+    		objectDetector,
+    		modelLoaded
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ("message" in $$props) message = $$props.message;
-    		if ("status" in $$props) $$invalidate(0, status = $$props.status);
-    		if ("picture" in $$props) $$invalidate(1, picture = $$props.picture);
+    		if ("message" in $$props) $$invalidate(0, message = $$props.message);
+    		if ("lightmessage" in $$props) lightmessage = $$props.lightmessage;
+    		if ("status" in $$props) $$invalidate(1, status = $$props.status);
+    		if ("picture" in $$props) $$invalidate(2, picture = $$props.picture);
+    		if ("canvas" in $$props) canvas = $$props.canvas;
+    		if ("results" in $$props) $$invalidate(3, results = $$props.results);
+    		if ("objectDetector" in $$props) objectDetector = $$props.objectDetector;
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [status, picture, handleClick];
+    	return [message, status, picture, results, onKeyPress, input_input_handler];
     }
 
     class App extends SvelteComponentDev {

@@ -39,14 +39,15 @@
     img.addEventListener("load", function () {
         canvas.getContext("2d").drawImage(img, 0, 0);
          objectDetector.detect(canvas, (err, r) => {
-           results = "I see " + r.map(e=>e.label).join(",");
+           results = r;
            console.log(results); // Will output bounding boxes of detected objects
-           fetch(`https://silicon-friends.glitch.me/new/light/${(results)}`);
         });
    });
     img.setAttribute("src", msg.data);
 
 
+//        const video = document.querySelector("img");
+//        const video = document.getElementById('lightview');
       }
 
 
@@ -58,7 +59,7 @@
     message = "";
   }
   const onKeyPress = e => {
-    if (e.charCode === 13 && message !== "") submit();
+    if (e.charCode === 13) submit();
   };
   function handleShutter(e) {
     socket.emit("hello", {toggle: false});
@@ -70,14 +71,14 @@
   }
 
   let objectDetector;
-  objectDetector = ml5.objectDetector('cocossd', {}, modelLoaded);
-  function modelLoaded() {
-    console.log('Model Loaded!');
-  }
-  onMount(async () => {
+//  onMount(async () => {
+    objectDetector = ml5.objectDetector('cocossd', {}, modelLoaded);
 
-    handleShutter();
-  })
+    function modelLoaded() {
+      console.log('Model Loaded!');
+    }
+
+//  })
 </script>
 
 <main>
@@ -109,9 +110,9 @@ currently I am {status}
 {#if picture !== undefined}
         <section class="center-section">
 <img class="fit" id="lightview" src={picture} />
-<p>
-{ results }
-</p>
+<pre><code>
+{ results !== undefined ? JSON.stringify(results) : "" }
+</code>
         </section>
 {/if}
 
@@ -168,10 +169,6 @@ input {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .code {
-    font-family: monospace;
-    width: 100%;
-    line-break: anywhere;
-  }
+
 
 </style>

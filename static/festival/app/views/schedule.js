@@ -1,5 +1,10 @@
 module.exports = [
   {
+    title: `September 18, 2021: Best Practices in Contemporary Dance at NEW NOW (Jorge Guevara & Naoto Hieda)`,
+    url: "https://newnow-festival.com/en/kuenstler-innen/naoto-hieda",
+    img: "https://img.glitches.me/images/2021/07/09/node-chat.png"
+  },
+  {
     title: `August 17, 2021: YouTube at Aktion Kölner Litfasssäulen (Naoto Hieda)`,
     url: "https://en.khm.de/termine/news.5174.khm-open-2021-aktion-kolner-litfaSssaulen/",
     img: "https://en.khm.de/621ad54e6566da9e138868573b154285.lightbox/Naoto_Hieda_YouTube.png"
@@ -7,16 +12,30 @@ module.exports = [
   {
     title: `July 31, 2021: Best Practices in Contemporary Dance at IDOCDE (Jorge Guevara & Naoto Hieda)`,
     url: "http://www.idocde.net/pages/190",
-    img: "https://img.glitches.me/images/2021/07/09/node-chat.png"
+    img: "https://img.glitches.me/images/2021/07/27/20210629102643029_2021-IDOCDE-symposium-postcard-JPG.jpg"
+  },
+  {
+    title: `July 26, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/utvgxFZkaoY",
+    img: "https://img.glitches.me/images/2021/07/27/vlcsnap-2021-07-27-11h30m14s208.png"
+  },
+  {
+    title: `July 24, 2021: Performance at Silicon Friends Camp (Ekheo; Robotics: So Kanno & Hess Jeon; Visuals: Naoto Hieda)`,
+    img: "https://img.glitches.me/images/2021/07/27/vlcsnap-2021-07-27-11h35m09s039.png"
+  },
+  {
+    title: `July 22, 2021: Light in Gosau`,
+    url: "https://silicon.glitches.me/",
+    img: "https://img.glitches.me/images/2021/07/22/light.jpg"
   },
   {
     title: `July 21, 2021: Best Practices in Under Construction (Naoto Hieda & Jorge Guevara)`,
-    img: "https://cdn.glitch.com/c872ab9a-264e-4ce2-91db-721811e90193%2Fnbaustelle.jpg?v=1625779632657"
+    img: "https://img.glitches.me/images/2021/07/22/underconstruction.jpg"
   },
   {
     title: `July 21, 2021: ＫＨ門 Festival at KHM Open (ctrl-space)`,
     url: "http://khmn.khm.de/",
-    img: "https://img.glitches.me/images/2021/07/09/image.png"
+    img: "https://img.glitches.me/images/2021/07/22/khmn.jpg"
   },
   {
     title: `July 21, 2021: Netze Open at KHM Open (Netze)`,

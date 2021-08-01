@@ -2,22 +2,26 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://glitches.me/dom-party.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://your-web.glitches.me/dom-party.js"></script>
 </head>
 
 <body style="overflow: hidden">
   <script>
-      let x = 0;
-      let y = 0;
-    p(["welcome", "welcome", "!!!"]).shadow()//.scrollX(()=>Math.random()*0.01).scrollY(-0.2)
-    .scroll(()=>(x=x*0.9+0.1*mouseX/window.innerWidth)-0.5,
-    ()=>(y=y*0.9+0.1*mouseY/window.innerHeight)-0.5)
-    .scrollY(-0.2)
-    .color([1,0.1],0.1,[0.1,1]).size(100).out(2)
-    p(`<a href="https://what.glitches.me">what.glitches.me?</a>`)
-    .shadow().rotate(0,1).color(0.5,0.1,1).size(30).out(0)
-    p(`<a href="https://who.glitches.me">who.glitches.me?</a>`)
-    .shadow().scrollX(-0.3).color(0.5,0.1,1).size(30).out(1)
+    new DomParty()
+    //   let x = 0;
+    //   let y = 0;
+    // p(["welcome", "welcome", "!!!"]).shadow()//.scrollX(()=>Math.random()*0.01).scrollY(-0.2)
+    // .scroll(()=>(x=x*0.9+0.1*mouseX/window.innerWidth)-0.5,
+    // ()=>(y=y*0.9+0.1*mouseY/window.innerHeight)-0.5)
+    // .scrollY(-0.2)
+    // .color([1,0.1],0.1,[0.1,1]).size(100).out(2)
+    p("glitches.me is a design studio exploring whateverness").font("Roboto")
+    .out(-1)
+    p(`<a style="color: rgba(0,0,255,1)" href="https://what.glitches.me">what.glitches.me?</a>`).font("Roboto")
+    .scrollY(0.2).bg(1,1,1,.7).size(30).out(0)
+    p(`<a style="color: rgba(255,0,0,1)" href="https://who.glitches.me">who.glitches.me?</a>`).font("Roboto")
+    .rotate(-Math.PI/2).bg(1,1,1,.7).scrollX(-0.3).color(0.5,0.1,1).size(30).out(1)
   </script>
 </body>
 

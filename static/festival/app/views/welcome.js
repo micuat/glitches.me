@@ -24,7 +24,7 @@ module.exports = function (state, emit) {
     // }
     if (e.url !== undefined && e.url.length > 0) {
       return html`
-      <li><a href="${e.url}">
+      <li><a href="${e.url}" target="_blank">
       <img src="${img}">
       ${e.title}
       </a></li>`

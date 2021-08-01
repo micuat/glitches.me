@@ -133,8 +133,28 @@ module.exports = [
   },
   {
     title: `July 31, 2021: Best Practices in Contemporary Dance at IDOCDE (Jorge Guevara & Naoto Hieda)`,
-    url: "http://www.idocde.net/pages/190",
-    img: "https://img.glitches.me/images/2021/07/27/20210629102643029_2021-IDOCDE-symposium-postcard-JPG.jpg"
+    url: "https://youtu.be/44Oaa1MMZhc",
+    img: "https://img.glitches.me/images/2021/08/01/vlcsnap-2021-08-01-13h30m13s605.jpg"
+  },
+  {
+    title: `July 30, 2021: Best Practices in Contemporary Dance: Chat (Liza Futerman, Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/mtl9W-YhLLc",
+    img: "https://img.glitches.me/images/2021/07/31/bp.jpg"
+  },
+  {
+    title: `July 29, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/0uip4OabhIc",
+    img: "https://img.glitches.me/images/2021/07/29/vlcsnap-2021-07-29-21h09m29s003.jpg"
+  },
+  {
+    title: `July 29, 2021: Best Practices in Contemporary Dance (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/TJgV-x_mTmU",
+    img: "https://img.glitches.me/images/2021/07/29/vlcsnap-2021-07-29-21h06m38s515.jpg"
+  },
+  {
+    title: `July 27, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/LCA43GclEQE",
+    img: "https://img.glitches.me/images/2021/07/28/vlcsnap-2021-07-28-12h48m03s246.jpg"
   },
   {
     title: `July 26, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
@@ -522,7 +542,7 @@ module.exports = function (state, emit) {
     // }
     if (e.url !== undefined && e.url.length > 0) {
       return html`
-      <li><a href="${e.url}">
+      <li><a href="${e.url}" target="_blank">
       <img src="${img}">
       ${e.title}
       </a></li>`

@@ -132,6 +132,21 @@ module.exports = [
     img: "https://en.khm.de/621ad54e6566da9e138868573b154285.lightbox/Naoto_Hieda_YouTube.png"
   },
   {
+    title: `August 3, 2021: Best Practices in Contemporary Dance: Chat (Ulrike Kuchner, Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/fExStCywwd8",
+    img: "https://img.glitches.me/images/2021/08/04/vlcsnap-2021-08-04-10h15m33s061.jpg"
+  },
+  {
+    title: `August 2, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/Mk8egbXcDmg",
+    img: "https://img.glitches.me/images/2021/08/02/vlcsnap-2021-08-02-19h36m29s573.jpg"
+  },
+  {
+    title: `July 31, 2021: Best Practices in Contemporary Dance at IDOCDE: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/uwWDDK-OI2Q",
+    img: "https://img.glitches.me/images/2021/08/02/vlcsnap-2021-08-02-20h15m12s581.jpg"
+  },
+  {
     title: `July 31, 2021: Best Practices in Contemporary Dance at IDOCDE (Jorge Guevara & Naoto Hieda)`,
     url: "https://youtu.be/44Oaa1MMZhc",
     img: "https://img.glitches.me/images/2021/08/01/vlcsnap-2021-08-01-13h30m13s605.jpg"
@@ -166,9 +181,13 @@ module.exports = [
     img: "https://img.glitches.me/images/2021/07/27/vlcsnap-2021-07-27-11h35m09s039.png"
   },
   {
-    title: `July 22, 2021: Light in Gosau`,
+    title: `July 22, 2021: Light in Gosau (Kanno So & Naoto Hieda)`,
     url: "https://silicon.glitches.me/",
     img: "https://img.glitches.me/images/2021/07/22/light.jpg"
+  },
+  {
+    title: `July 21, 2021: Change Your Back Lookout Point (Naoto Hieda)`,
+    img: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2FIMG_7631.jpg"
   },
   {
     title: `July 21, 2021: Best Practices in Under Construction (Naoto Hieda & Jorge Guevara)`,
@@ -187,7 +206,7 @@ module.exports = [
   {
     title: `July 20, 2021: Silicon Friend Camp`,
     url: "https://cwc.radical-openness.org/siliconfriendcamp/",
-    img: "https://img.glitches.me/images/2021/07/09/image459b46bce5aef72e.png"
+    img: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsebastian-avatars2.jpeg"
   },
   {
     title: `July 15, 2021: Best Practices in Contemporary Dance (Jorge Guevara & Naoto Hieda)`,
@@ -613,7 +632,7 @@ module.exports = function (state, emit) {
     <h2>Partners</h2>
     <div class="gridy">
       <ul>
-        <li><a href="https://glitches.me">
+        <li><a href="https://studio.glitches.me">
         <img src="https://img.glitches.me/images/2021/04/26/imageaeaf7c70602b2a9c.png">
         glitches.me</a></li>
         <li><a href="https://museum.glitches.me">

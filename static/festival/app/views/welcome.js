@@ -95,7 +95,7 @@ module.exports = function (state, emit) {
     <h2>Partners</h2>
     <div class="gridy">
       <ul>
-        <li><a href="https://glitches.me">
+        <li><a href="https://studio.glitches.me">
         <img src="https://img.glitches.me/images/2021/04/26/imageaeaf7c70602b2a9c.png">
         glitches.me</a></li>
         <li><a href="https://museum.glitches.me">

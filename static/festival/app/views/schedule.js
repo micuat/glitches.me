@@ -1,13 +1,48 @@
 module.exports = [
   {
+    title: `September 20, 2021: Glitch Vacations (Flor de Fuego & Naoto Hieda)`,
+    url: "https://sched.co/lhE0",
+    img: "https://cdn.glitch.com/5fae5983-09f9-4e41-b107-ad0d2f45ad38%2Fsloth.jpg?v=1628507201191"
+  },
+  {
     title: `September 18, 2021: Best Practices in Contemporary Dance at NEW NOW (Jorge Guevara & Naoto Hieda)`,
     url: "https://newnow-festival.com/en/kuenstler-innen/naoto-hieda",
     img: "https://img.glitches.me/images/2021/07/09/node-chat.png"
   },
   {
+    title: `August 22, 2021: Homepage Builders - Workshop (Flor de Fuego & Naoto Hieda)`,
+    url: "https://ccfest.rocks/register",
+    img: "https://cdn.glitch.com/5fae5983-09f9-4e41-b107-ad0d2f45ad38%2Fnoise.jpg?v=1628709885684"
+  },
+  {
     title: `August 17, 2021: YouTube at Aktion Kölner Litfasssäulen (Naoto Hieda)`,
     url: "https://en.khm.de/termine/news.5174.khm-open-2021-aktion-kolner-litfaSssaulen/",
     img: "https://en.khm.de/621ad54e6566da9e138868573b154285.lightbox/Naoto_Hieda_YouTube.png"
+  },
+  {
+    title: `August 16, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/73MwHqOW60c",
+    img: "https://img.glitches.me/images/2021/08/16/vlcsnap-2021-08-16-21h11m16s734.jpg"
+  },
+  {
+    title: `August 15, 2021: Best Practices in Contemporary Dance: Narration (Naoto Hieda)`,
+    url: "https://youtu.be/3U5ER9NmmbE",
+    img: "https://img.glitches.me/images/2021/08/16/Screenshot-2021-08-16.jpg"
+  },
+  {
+    title: `August 14, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/odnK-qqMjnU",
+    img: "https://img.glitches.me/images/2021/08/16/Screenshot-2021-08-14.jpg"
+  },
+  {
+    title: `August 9, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/BdrJjP1P4GY",
+    img: "https://img.glitches.me/images/2021/08/16/Screenshot-2021-08-09.jpg"
+  },
+  {
+    title: `August 8, 2021: Hydra inside LiveLab (Naoto Hieda)`,
+    url: "https://github.com/micuat/LiveLab/tree/hydra",
+    img: "https://img.glitches.me/images/2021/08/08/livelab.jpg"
   },
   {
     title: `August 3, 2021: Best Practices in Contemporary Dance: Chat (Ulrike Kuchner, Jorge Guevara & Naoto Hieda)`,

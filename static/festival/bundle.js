@@ -122,24 +122,93 @@ module.exports = function (state, emitter) {
 },{}],3:[function(require,module,exports){
 module.exports = [
   {
-    title: `September 20, 2021: Glitch Vacations (Flor de Fuego & Naoto Hieda)`,
-    url: "https://sched.co/lhE0",
-    img: "https://cdn.glitch.com/5fae5983-09f9-4e41-b107-ad0d2f45ad38%2Fsloth.jpg?v=1628507201191"
+    title: `September 25, 2021: Best Practices in Contemporary Dance (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/hQM0J9eMMAs",
+    img: "https://img.glitches.me/images/2021/09/26/210925.jpg"
   },
   {
-    title: `September 18, 2021: Best Practices in Contemporary Dance at NEW NOW (Jorge Guevara & Naoto Hieda)`,
-    url: "https://newnow-festival.com/en/kuenstler-innen/naoto-hieda",
-    img: "https://img.glitches.me/images/2021/07/09/node-chat.png"
+    title: `September 23, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda) [2]`,
+    url: "https://youtu.be/-KNzui9uN6c",
+    img: "https://img.glitches.me/images/2021/09/26/210923chat2.jpg"
+  },
+  {
+    title: `September 23, 2021: Best Practices in Contemporary Dance (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/khDpWxA_YeA",
+    img: "https://img.glitches.me/images/2021/09/26/210923practice.jpg"
+  },
+  {
+    title: `September 23, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda) [1]`,
+    url: "https://youtu.be/97sctZ7WXO0",
+    img: "https://img.glitches.me/images/2021/09/26/210923chat1.jpg"
+  },
+  {
+    title: `September 22, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/5cbqJzylRD0",
+    img: "https://img.glitches.me/images/2021/09/26/210922.jpg"
+  },
+  {
+    title: `September 20, 2021: Glitch Vacations (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/d0KMUUOrUvs",
+    img: "https://img.glitches.me/images/2021/09/20/vlcsnap-2021-09-20-19h11m28s562.jpg"
+  },
+  {
+    title: `September 19, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/D4HbfgzSmdk",
+    img: "https://img.glitches.me/images/2021/09/20/chat12c7665be8c83941.jpg"
+  },
+  {
+    title: `September 18, 2021: Best Practices in Contemporary Dance: Chat at NEW NOW (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/JqPZBdOrVlE",
+    img: "https://img.glitches.me/images/2021/09/20/chat.jpg"
+  },
+  {
+    title: `September 17, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda) [2]`,
+    url: "https://youtu.be/7D5xSwIFRTU",
+    img: "https://img.glitches.me/images/2021/09/19/chat2.jpg"
+  },
+  {
+    title: `September 17, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda) [1]`,
+    url: "https://youtu.be/XCTcsZI6-Bw",
+    img: "https://img.glitches.me/images/2021/09/19/chat1.jpg"
+  },
+  {
+    title: `September 5, 2021: Talkative Hydra (Naoto Hieda)`,
+    url: "https://talkative-hydra.glitch.me/",
+    img: "https://img.glitches.me/images/2021/09/07/talkative.jpg"
+  },
+  {
+    title: `September 4, 2021: hydra-tree-stub (Naoto Hieda)`,
+    url: "https://hydra-tree-stub.glitch.me/",
+    img: "https://img.glitches.me/images/2021/09/05/hydra-tree.jpg"
+  },
+  {
+    title: `August 27, 2021: Die Urbane. Eine HipHop Partei: Performance (Raphael Hillebrand; camera: Naoto Hieda)`,
+    url: "https://youtu.be/6jxm8a3hoQE",
+    img: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Frh.png?v=1630336603964"
+  },
+  {
+    title: `August 23, 2021: Best Practices in Contemporary Dance: Chat (Jo Caimo, Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/jksxNKJe3Uc",
+    img: "https://img.glitches.me/images/2021/08/24/vlcsnap-2021-08-24-20h39m43s141.jpg"
   },
   {
     title: `August 22, 2021: Homepage Builders - Workshop (Flor de Fuego & Naoto Hieda)`,
-    url: "https://ccfest.rocks/register",
-    img: "https://cdn.glitch.com/5fae5983-09f9-4e41-b107-ad0d2f45ad38%2Fnoise.jpg?v=1628709885684"
+    url: "https://ccfest-2021-homepage.glitch.me/",
+    img: "https://img.glitches.me/images/2021/08/24/vlcsnap-2021-08-24-20h39m08s845.jpg"
+  },
+  {
+    title: `August 18, 2021: Glitter Nails (Naoto Hieda)`,
+    url: "https://glitter-nails.glitch.me/",
+    img: "https://img.glitches.me/images/2021/08/18/canvas.jpg"
+  },
+  {
+    title: `August 17, 2021: Hydra inside Livelab (Flor de Fuego & Naoto Hieda)`,
+    img: "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Flivelab.jpg?v=1629353882235"
   },
   {
     title: `August 17, 2021: YouTube at Aktion Kölner Litfasssäulen (Naoto Hieda)`,
     url: "https://en.khm.de/termine/news.5174.khm-open-2021-aktion-kolner-litfaSssaulen/",
-    img: "https://en.khm.de/621ad54e6566da9e138868573b154285.lightbox/Naoto_Hieda_YouTube.png"
+    img: "https://img.glitches.me/images/2021/08/24/CD05E93B-8CC7-405A-8777-9E94597BC1E5.jpg"
   },
   {
     title: `August 16, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,

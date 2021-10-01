@@ -1,5 +1,34 @@
 module.exports = [
   {
+    title: `September 29, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda) [2]`,
+    url: "https://youtu.be/8QAd-VyRWL4",
+  },
+  {
+    title: `September 29, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda) [1]`,
+    url: "https://youtu.be/fG-Zr_W3-XE",
+    img: "https://img.glitches.me/images/2021/09/29/vlcsnap-2021-09-29-15h55m45s003.jpg"
+  },
+  {
+    title: `September 28, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda) [2]`,
+    url: "https://youtu.be/HxMXpRzUV-c",
+    img: "https://img.glitches.me/images/2021/09/29/vlcsnap-2021-09-29-08h50m38s055.jpg"
+  },
+  {
+    title: `September 28, 2021: Best Practices in Contemporary Dance (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/w5qAER81o_U",
+    img: "https://img.glitches.me/images/2021/09/29/vlcsnap-2021-09-29-08h51m47s569.jpg"
+  },
+  {
+    title: `September 28, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda) [1]`,
+    url: "https://youtu.be/3hs0E63vYjU",
+    img: "https://img.glitches.me/images/2021/09/28/vlcsnap-2021-09-28-15h16m01s159.jpg"
+  },
+  {
+    title: `September 26, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/7Xvc9k0rPDg",
+    img: "https://img.glitches.me/images/2021/09/27/vlcsnap-2021-09-27-11h54m52s836.png"
+  },
+  {
     title: `September 25, 2021: Best Practices in Contemporary Dance (Jorge Guevara & Naoto Hieda)`,
     url: "https://youtu.be/hQM0J9eMMAs",
     img: "https://img.glitches.me/images/2021/09/26/210925.jpg"

@@ -22,6 +22,10 @@ module.exports = function (state, emit) {
     // if (img.match(/.*img\.glitches\.me.*png/)) {
     //   img = img.replace(/png$/, "th.png");
     // }
+    if (img === undefined) {
+      const vId = /https:\/\/youtu.be\/(.*)/g.exec(e.url);
+      img = `https://img.youtube.com/vi/${vId[1]}/0.jpg`
+    }
     if (e.url !== undefined && e.url.length > 0) {
       return html`
       <li><a href="${e.url}" target="_blank">

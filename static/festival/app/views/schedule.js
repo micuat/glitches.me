@@ -1,5 +1,28 @@
 module.exports = [
   {
+    title: `October 18, 2021: Risograph (Flor de Fuego & Naoto Hieda)`,
+    url: "https://risograph.glitch.me/",
+    img: "https://img.glitches.me/images/2021/10/20/Image.jpg",
+  },
+  {
+    title: `October 18, 2021: Best Practices in Contemporary Dance: Chat (Annie Abrahams, Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/Dcx-9qNX9dM",
+  },
+  {
+    title: `October 13, 2021: Risograph (Naoto Hieda)`,
+    url: "https://risograph.glitch.me/",
+    img: "https://cdn.glitch.me/1392ab99-9774-4414-a304-1b9a35d2897e%2FIMG_8311.JPG?v=1634155627349",
+  },
+  {
+    title: `October 11, 2021: Risograph (Naoto Hieda)`,
+    url: "https://risograph.glitch.me/",
+    img: "https://cdn.glitch.me/1392ab99-9774-4414-a304-1b9a35d2897e%2FImage10.png.jpg?v=1633978203441",
+  },
+  {
+    title: `October 4, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/6-KQQtdDLuo",
+  },
+  {
     title: `September 29, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda) [2]`,
     url: "https://youtu.be/8QAd-VyRWL4",
   },

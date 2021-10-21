@@ -5,111 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    p, h1 {
-      margin: 10px;
+    header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      max-width: 768px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    body > div {
+    p,
+    h1 {
+      margin: .1em;
+    }
+
+    body>div {
       margin-bottom: 2em;
     }
+
     a:visited {
       color: blue;
     }
+
     a {
       text-decoration: none;
     }
+
+    .year {
+      text-align: right;
+      position: absolute;
+      right: 0;
+      top: -1.5em;
+      font-size: .7em;
+    }
+    .th {
+      width: 100%;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      row-gap: 50px;
+      column-gap: 50px;
+    }
+
+    .project {
+      height: -moz-fit-content;
+      position: relative;
+      width: 100%;
+      border: solid black 2px;
+      box-sizing: border-box;
+    }
   </style>
+  <script src="https://unpkg.com/mithril/mithril.js"></script>
 </head>
 
 <body style="font-family: Roboto, sans-serif">
+  <header>
   <h1>Portfolio</h1>
   <div>
     <p>
       !important We do full-stack whatever.
     </p>
   </div>
+  </header>
 
-  <div>
-    <p>
-      <a target="_blank" href="http://netze.khm.de/">Netze Open</a> (2021)
-    </p>
-    <p>
-      client: Netze<br>keywords: Svelte, node.js, Discord.js
-    </p>
-    <p>
-      -> <a target="_blank" href="https://www.creativeapplications.net/member-submissions/khm-netze-open-and-kh-festival/">CreativeApplications.Net</a>
-    </p>
-  </div>
-
-  <div>
-    <p>
-      <a target="_blank" href="http://khmn.khm.de/">KH門 Festival</a> (2021)
-    </p>
-    <p>
-      client: Ctrl-Space<br>keywords: Svelte, Leaflet
-    </p>
-  </div>
-
-  <div>
-    <p>
-      <a target="_blank" href="https://bestchat.glitch.me/">Best Practices Chat</a> (2021)
-    </p>
-    <p>
-      client: #bestpracticesincontemporarydance<br>keywords: Hydra
-    </p>
-  </div>
-
-  <div>
-    <p>
-      <a target="_blank" href="https://festival.glitches.me/">festival.glitches.me</a> (2021)
-    </p>
-    <p>
-      keywords: choo.io, Hydra
-    </p>
-  </div>
-
-  <div>
-    <p>
-      <a target="_blank" href="https://naoto-portfolio.glitch.me/">Works: Naoto Hieda</a> (2021)
-    </p>
-    <p>
-      keywords: choo.io
-    </p>
-  </div>
-
-  <div>
-    <p>
-      <a target="_blank" href="http://beta.ensemble-garage.de/">Ensemble Garage</a> (2020)
-    </p>
-    <p>
-      keywords: Wordpress, p5.js
-    </p>
-  </div>
-
-  <div>
-    <p>
-      XM-Profiler (2018)
-    </p>
-    <p>
-      client: Ito-en<br>keywords: openFrameworks, Ingress, GLSL
-    </p>
-  </div>
-
-  <div>
-    <p>
-      Jeux de Rebans (2018)
-    </p>
-    <p>
-      client: Mikimoto<br>keywords: openFrameworks, face tracking, GLSL
-    </p>
-  </div>
-
-  <div>
-    <p>
-      Skin Irony Virtual Screen (2018)
-    </p>
-    <p>
-      client: Swatch Japan<br>keywords: openFrameworks, Kinect, GLSL
-    </p>
+  <div class="projects">
   </div>
 
   <div>
@@ -117,6 +79,97 @@
       <a href="https://www.glitches.me/">back</a>
     </p>
   </div>
+  <script>
+    const root = document.querySelector(".projects")
+
+    const data = [
+      {
+        title: "Empty Mind",
+        year: 2021,
+        link: "https://empty-minds.vercel.app/",
+        client: "MAXLab",
+        keywords: ["React", "Firebase", "Unity"]
+      },
+      {
+        title: "Netze Open",
+        year: 2021,
+        link: "http://netze.khm.de/",
+        client: "Netze",
+        keywords: ["Svelte", "node.js", "Discord.js"]
+      },
+      {
+        title: "KH門 Festival",
+        year: 2021,
+        link: "http://khmn.khm.de/",
+        client: "Ctrl-Space",
+        keywords: ["Svelte", "Leaflet"],
+        img: "https://cdn.glitch.me/c872ab9a-264e-4ce2-91db-721811e90193%2Fkhmn.jpg",
+        alt: "people on the street watching screen during the festival",
+      },
+      {
+        title: "Best Practices Chat",
+        year: 2021,
+        link: "https://bestchat.glitch.me/",
+        client: "#bestpracticesincontemporarydance",
+        keywords: ["Hydra"],
+        img: "https://img.glitches.me/images/2021/10/21/image.png",
+        alt: "website screen capture of best practices chat featuring mouse cursor",
+      },
+      {
+        title: "festival.glitches.me",
+        year: 2021,
+        link: "https://festival.glitches.me/",
+        // client: "",
+        keywords: ["choo.io", "Hydra"]
+      },
+      {
+        title: "Works: Naoto Hieda",
+        year: 2021,
+        link: "https://naoto-portfolio.glitch.me/",
+        // client: "",
+        keywords: ["choo.io"]
+      },
+      {
+        title: "Ensemble Garage",
+        year: 2020,
+        link: "http://beta.ensemble-garage.de/",
+        client: "Ensemble Garage",
+        keywords: ["Wordpress hacking", "p5.js"],
+        img: "https://img.glitches.me/images/2021/10/21/image274ed1bf4a479f18.png",
+        alt: "ensemble garage's website screen capture",
+      },
+      {
+        title: "XM-Profiler",
+        year: 2018,
+        client: "Ito-en",
+        keywords: ["openFrameworks", "Ingress", "GLSL"],
+        img: "https://cdn.glitch.me/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-03-12-financing-as-an-artist-2020-en.jpg",
+        alt: "vending-machine like displays showing status of ingress",
+      },
+      {
+        title: "Jeux de Rebans",
+        year: 2018,
+        client: "Mikimoto",
+        keywords: ["openFrameworks", "face tracking", "GLSL", "node.js"]
+      },
+      {
+        title: "Skin Irony Virtual Screen",
+        year: 2018,
+        client: "Swatch Japan",
+        keywords: ["openFrameworks", "Kinect", "GLSL", "node.js"]
+      },
+    ]
+
+    m.render(root, data.map(d => [
+      m("div.project", [
+        m("p.year", d.year),
+        d.img && m("img.th", {src: d.img, alt: d.alt}),
+        d.link ? m("p", m("a", { href: d.link, target: "_blank"}, d.title)) : m("p", d.title),
+        d.client && m("p", `client: ${d.client}`),
+        m("p", `keywords: ${d.keywords.join(', ')}`),
+      ])
+    ]))
+  </script>
 </body>
 
 </html>

@@ -122,6 +122,15 @@ module.exports = function (state, emitter) {
 },{}],3:[function(require,module,exports){
 module.exports = [
   {
+    title: `October 21, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/KG20JkOfWhQ",
+  },
+  {
+    title: `October 20, 2021: Risograph (Naoto Hieda)`,
+    url: "https://risograph.glitch.me/",
+    img: "https://cdn.glitch.me/1392ab99-9774-4414-a304-1b9a35d2897e%2FImage_5.png.jpg?v=1634846188736",
+  },
+  {
     title: `October 18, 2021: Risograph (Flor de Fuego & Naoto Hieda)`,
     url: "https://risograph.glitch.me/",
     img: "https://img.glitches.me/images/2021/10/20/Image.jpg",

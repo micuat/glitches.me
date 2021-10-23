@@ -1,4 +1,5 @@
-module.exports = [
+// module.exports = [
+window.schedule = [
   {
     title: `October 21, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
     url: "https://youtu.be/KG20JkOfWhQ",

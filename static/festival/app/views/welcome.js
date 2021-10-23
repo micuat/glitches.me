@@ -1,7 +1,7 @@
 // import choo's template helper
 const html = require("choo/html");
 
-const schedule = require("./schedule.js")
+const schedule = window.schedule;//require("./schedule.js")
 
 // export module
 module.exports = function (state, emit) {

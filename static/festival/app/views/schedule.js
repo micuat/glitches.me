@@ -1,6 +1,30 @@
 // module.exports = [
 window.schedule = [
   {
+    title: `November 19, 2021: Leewa (Ekheo; video by Naoto Hieda)`,
+    url: "https://cwc.radical-openness.org/",
+    img: "https://cdn.glitch.me/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fvlcsnap-2021-11-18-10h55m20s617.png?v=1637200592768",
+  },
+  {
+    title: `November 12, 2021: Best Practices in Contemporary Dance: Chat (Julia Reist, Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/Qd5PWe9hrw8",
+  },
+  {
+    title: `November 10, 2021: Conversations with Computers`,
+    url: "https://cwc.radical-openness.org/",
+    img: "https://cdn.glitch.me/f61e9156-1be6-44f2-84b8-d6fa7844ff0e%2Fopening01.jpg?v=1636606139598",
+  },
+  {
+    title: `October 31, 2021: torus-p5-template (Naoto Hieda)`,
+    url: "https://torus-p5-template.glitch.me/",
+    img: "https://cdn.glitch.me/68b590d0-553d-40df-83af-af1f7b2b3be7%2F32debb75-abe4-484b-9eb8-0c26cd87519c.image.png?v=1635692013300",
+  },
+  {
+    title: `October 30, 2021: hydra-editor-torus (Naoto Hieda)`,
+    url: "https://hydra-editor-torus.glitch.me/",
+    img: "https://img.glitches.me/images/2021/10/30/image.png",
+  },
+  {
     title: `October 21, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
     url: "https://youtu.be/KG20JkOfWhQ",
   },

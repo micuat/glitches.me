@@ -1,6 +1,16 @@
+const en = {
+  tagline: jdom`<div><b>glitches.me</b> is a design studio exploring whateverness in whatever medium.</div>`,
+}
+
+const ja = {
+  tagline: jdom`<div><b>グリッチズ・ミー</b>はなにがしかのメディアでなにがしかを追及するデザイン・スタジオです</div>`,
+}
+
+const langs = { en, ja };
 
 class App extends Torus.StyledComponent {
   init() {
+    this.lang = "en";
   }
   styles() {
     return css`
@@ -31,15 +41,35 @@ class App extends Torus.StyledComponent {
         text-align: center;
         padding: 1em 0 1em;
       }
+      header a {
+        color: black;
+      }
+      header div {
+        display: inline;
+        margin: 0 1em 0 1em;
+      }
     `;
   }
   compose() {
     return jdom`
     <div>
       <div class="container">
-        <header></header>
+        <header>
+          <div>
+            <a href="#" onclick=${() => {
+              this.lang = "en";
+              this.render();
+            }}>English</a>
+          </div>
+          <div>
+            <a href="#" onclick=${() => {
+              this.lang = "ja";
+              this.render();
+            }}>日本語</a>
+          </div>
+        </header>
         <div>
-          <p class="tagline">glitches.me is a design studio exploring whateverness in whatever medium.</p>
+          <p class="tagline">${langs[this.lang].tagline}</p>
           <a style="color: black" href="https://portfolio.glitches.me">portfolio</a>
         </div>
         <footer>glitches.me 2021</footer>

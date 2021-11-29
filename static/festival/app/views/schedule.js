@@ -1,8 +1,28 @@
 // module.exports = [
 window.schedule = [
   {
+    title: `November 29, 2021: n02 (Naoto Hieda)`,
+    url: "https://hicetnunc.art/objkt/561388",
+    img: "https://img.glitches.me/images/2021/11/29/thumbnail.png"
+  },
+  {
+    title: `November 28, 2021: n01 (Naoto Hieda)`,
+    url: "https://hicetnunc.art/objkt/559782",
+    img: "https://img.glitches.me/images/2021/11/28/thumbnail.png"
+  },
+  {
+    title: `November 27, 2021: n00 (Naoto Hieda)`,
+    url: "https://hicetnunc.art/objkt/558826",
+    img: "https://img.glitches.me/images/2021/11/27/thumbnail.png"
+  },
+  {
+    title: `November 20, 2021: Glitch Vacations (Flor de Fuego & Naoto Hieda)`,
+    url: "https://21.piksel.no/",
+    img: "https://img.glitches.me/images/2021/09/20/vlcsnap-2021-09-20-19h11m28s562.jpg"
+  },
+  {
     title: `November 19, 2021: Leewa (Ekheo; video by Naoto Hieda)`,
-    url: "https://cwc.radical-openness.org/",
+    url: "https://www.youtube.com/watch?v=MTmKFf6HImA",
     img: "https://cdn.glitch.me/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fvlcsnap-2021-11-18-10h55m20s617.png?v=1637200592768",
   },
   {

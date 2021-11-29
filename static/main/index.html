@@ -4,35 +4,14 @@
   <title>glitches.me</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://your-web.glitches.me/dom-party.js"></script>
+  <link rel="stylesheet" href="/style.css" />
+  <!-- <script src="https://your-web.glitches.me/dom-party.js"></script> -->
+  <script src="https://unpkg.com/torus-dom/dist/index.min.js"></script>
+  <script defer src="/script.js"></script>
 </head>
 
-<body style="overflow: hidden">
-  <script>
-    new DomParty()
-    //   let x = 0;
-    //   let y = 0;
-    // p(["welcome", "welcome", "!!!"]).shadow()//.scrollX(()=>Math.random()*0.01).scrollY(-0.2)
-    // .scroll(()=>(x=x*0.9+0.1*mouseX/window.innerWidth)-0.5,
-    // ()=>(y=y*0.9+0.1*mouseY/window.innerHeight)-0.5)
-    // .scrollY(-0.2)
-    // .color([1,0.1],0.1,[0.1,1]).size(100).out(2)
-    p("glitches.me is a design studio exploring whateverness in whatever medium.").font("Roboto")
-    //p("glitches.me is a design studio exploring whateverness in whatever medium. Say hi to it@glitches.me").font("Roboto")
-    .size(25)
-    .out(0)
-    p(`<a style="color: rgba(0,0,255,1)" href="https://what.glitches.me">what.glitches.me?</a>`).font("Roboto")
-    .scroll(0.1,0.2).bg(1,1,1,0).size(30).out(1)
-    p(`<a style="color: rgba(255,0,0,1)" href="https://who.glitches.me">who.glitches.me?</a>`).font("Roboto")
-    .rotate(-Math.PI/2).bg(1,1,1,0).scrollX(-0.3).color(0.5,0.1,1).size(30).out(2)
-    // p(`<a style="color: rgba(255,0,255,1)" href="https://festival.glitches.me">festival.glitches.me</a>`).font("Roboto")
-    // .scroll(-0.2, -0.2, -0.02).bg(1,1,1,0).size(10).out(3)
-    p("glitches.me 2021").font("Roboto")
-    .size(10).scrollY(0.4)
-    .out(4)
-    p(`<a style="color: black" href="https://portfolio.glitches.me">portfolio</a>`).font("Roboto")
-    .scroll(-0.2, -0.2).bg(1,1,1,0).size(20).out(5)
-  </script>
+<body>
+  <div id="app"></div>
 </body>
 
 </html>

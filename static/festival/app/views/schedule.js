@@ -1,9 +1,26 @@
 // module.exports = [
 window.schedule = [
   {
+    title: `December 6, 2021: surveillance-hydra (Naoto Hieda)`,
+    url: "https://surveillance-hydra.glitch.me/",
+    img: "https://cdn.glitch.me/4440b742-5a8f-401f-8d44-f126f5cd9f5b%2Fsurveillance-hydra.jpg?v=1638779038625"
+  },
+  {
+    title: `December 5, 2021: Hydra Tutorial: Hydra inside webpage (3) (Naoto Hieda)`,
+    url: "https://youtu.be/J3hDZBGomjc",
+  },
+  {
+    title: `December 4, 2021: Hydra Tutorial: Hydra inside webpage (2) (Naoto Hieda)`,
+    url: "https://youtu.be/bicZGaJzeVE",
+  },
+  {
     title: `November 29, 2021: n02 (Naoto Hieda)`,
     url: "https://hicetnunc.art/objkt/561388",
     img: "https://img.glitches.me/images/2021/11/29/thumbnail.png"
+  },
+  {
+    title: `November 28, 2021: Best Practices in Contemporary Dance (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/wnsQ0Fd47OE",
   },
   {
     title: `November 28, 2021: n01 (Naoto Hieda)`,

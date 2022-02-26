@@ -1,6 +1,103 @@
 // module.exports = [
 window.schedule = [
   {
+    title: `February 25, 2022: Flok & Mapping (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/Voa52q9sSPo",
+  },
+  {
+    title: `Februrary 23, 2022: nonstop-abundant-meadow (Flor de Fuego & Naoto Hieda)`,
+    img: "https://dl.airtable.com/.attachmentThumbnails/f204f8177ef47c3f2e3739902c82c819/af3e9662",
+    url: "https://nonstop-abundant-meadow.glitch.me/",
+  },
+  {
+    title: `Februrary 22, 2022: 3D Glitch Me (Flor de Fuego & Naoto Hieda)`,
+    img: "https://dl.airtable.com/.attachmentThumbnails/908b8c824e6fed16e2ecf06571de8028/92560164",
+    url: "https://3d-glitch-me.glitch.me/",
+  },
+  {
+    title: `Februrary 21, 2022: wild-hydra (Naoto Hieda & Flor de Fuego)`,
+    img: "https://img.glitches.me/images/2022/02/22/Screenshot-2022-02-21-153823.jpg",
+    url: "https://wild-hydra.glitch.me/",
+  },
+  {
+    title: `February 17, 2022: Flok & Mapping (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/q9pOpNYWYrk",
+  },
+  {
+    title: `February 16, 2022: Making of #NaotoHieda`,
+    img: "https://cdn.glitch.global/83766138-efc6-4942-8eea-f5b8575f35e3/banner003.jpg?v=1644949590501",
+    url: "https://naotohieda.glitch.me/",
+  },
+  {
+    title: `February 16, 2022: Flok & Mapping (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/guclDh9oGfE",
+  },
+  {
+    title: `February 15, 2022: Flok & Mapping (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/VXF20cF-sx0",
+  },
+  {
+    title: `February 13, 2022: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/1WqfGzpY7Ds",
+  },
+  {
+    title: `February 11, 2022: #NaotoHieda`,
+    img: "https://img.glitches.me/images/2022/02/13/banner.jpg",
+    url: "https://www.po-holdings.co.jp/m-annex/exhibition/index.html",
+  },
+  {
+    title: `February 10, 2022: Pixeljam (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/2XQQhf-taQo",
+  },
+  {
+    title: `February 9, 2022: Flok (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/OmqG7iO1OpA",
+  },
+  {
+    title: `February 6, 2022: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/7bNzRqsj8qs",
+  },
+  {
+    title: `January 30, 2022: hydra-freesound-auto (Naoto Hieda)`,
+    img: "https://img.glitches.me/images/2022/01/30/hydra-freesound.jpg",
+    url: "https://hydra-freesound-auto.glitch.me/",
+  },
+  {
+    title: `January 28, 2022: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/O5F9m2pOvmk",
+  },
+  {
+    title: `January 15, 2022: Best Practices in Contemporary Dance: (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/zJgAjaoXHnc",
+  },
+  {
+    title: `January 15, 2022: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/jEY7U66sMsA",
+  },
+  {
+    title: `January 6, 2022: #BestPracticesInContemporaryDance (Jorge Guevara & Naoto Hieda)`,
+    url: "https://best-ux.glitch.me",
+    img: "https://img.glitches.me/images/2022/01/07/Photo-2022-01-06-18-45-49.jpg",
+  },
+  {
+    title: `December 20, 2021: hydra-next (Naoto Hieda)`,
+    url: "https://hydra-next.glitch.me",
+    img: "https://cdn.glitch.me/6392dc14-044b-4361-af1a-617c167b363f/hydra-next.jpg?v=1639983000890",
+  },
+  {
+    title: `December 17, 2021: Okinawa 2021 Trip (Naoto Hieda)`,
+    url: "https://okinawa-2021-trip.glitch.me",
+    img: "https://img.glitches.me/images/2021/12/17/Screenshot-2021-12-17-114826.jpg",
+  },
+  {
+    title: `December 6, 2021: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/zuzgKYgKEzM",
+  },
+  {
+    title: `December 6, 2021: Hydra Tutorial: Hydra inside webpage (4) (Naoto Hieda)`,
+    url: "https://youtu.be/bcO34gZp4T4",
+  },
+  {
     title: `December 6, 2021: surveillance-hydra (Naoto Hieda)`,
     url: "https://surveillance-hydra.glitch.me/",
     img: "https://cdn.glitch.me/4440b742-5a8f-401f-8d44-f126f5cd9f5b%2Fsurveillance-hydra.jpg?v=1638779038625"

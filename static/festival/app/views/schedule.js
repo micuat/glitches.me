@@ -1,6 +1,34 @@
 // module.exports = [
 window.schedule = [
   {
+    title: `March 14, 2022: Flok 360 Jam (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/YGnWAAXbgEU",
+  },
+  {
+    title: `March 10, 2022: Flok Jam (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/nDS56d4VVm4",
+  },
+  {
+    title: `March 8, 2022: Livecodera (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/XyUGDKd3lME",
+  },
+  {
+    title: `March 7, 2022: Flok & Mapping (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/Bp4Yv7Ce-eM",
+  },
+  {
+    title: `March 3, 2022: Flok & Mapping (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/c3VfgdbXsbY",
+  },
+  {
+    title: `March 2, 2022: Flok & Mapping (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/W_u0w5u32eE",
+  },
+  {
+    title: `February 28, 2022: Flok & Mapping (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/SHOzA-HyaYk",
+  },
+  {
     title: `February 25, 2022: Flok & Mapping (Flor de Fuego & Naoto Hieda)`,
     url: "https://youtu.be/Voa52q9sSPo",
   },

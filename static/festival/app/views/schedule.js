@@ -1,6 +1,38 @@
 // module.exports = [
 window.schedule = [
   {
+    title: `April 8, 2022: Flok & Witchcraft (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/03qZ0xKP1jA",
+  },
+  {
+    title: `March 28, 2022: Best Practices in Contemporary Dance (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/K9RhzqV3eO0",
+  },
+  {
+    title: `March 27, 2022: Best Practices in Contemporary Dance: Chat (Jorge Guevara & Naoto Hieda)`,
+    url: "https://youtu.be/gnB8k71o-Ws",
+  },
+  {
+    title: `March 24, 2022: It's quite random but working (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/6_FFuYF6Hf8",
+  },
+  {
+    title: `March 21, 2022: Pasos Prohibidos (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/kRZnAHatm48",
+  },
+  {
+    title: `March 20, 2022: Algorave 10th Anniversary (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/miLZwRqgN9A",
+  },
+  {
+    title: `March 18, 2022: GlitchMe Showreel (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/EYkHq8Mps3U",
+  },
+  {
+    title: `March 17, 2022: Flok 360 Jam (Flor de Fuego & Naoto Hieda)`,
+    url: "https://youtu.be/qtDxYp6VDKw",
+  },
+  {
     title: `March 14, 2022: Flok 360 Jam (Flor de Fuego & Naoto Hieda)`,
     url: "https://youtu.be/YGnWAAXbgEU",
   },

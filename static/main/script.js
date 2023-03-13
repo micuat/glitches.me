@@ -14,13 +14,27 @@ class App extends Torus.StyledComponent {
   }
   styles() {
     return css`
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: stretch;
-      align-content: stretch;
-      height: 100%;
+      .whatever {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+      }
+      .cover {
+        position: sticky;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://bild.glitches.me/images/2022/10/18/wm_qoT.jpg");
+        background-size: cover;
+        background-position: center center;
+        opacity: 0.5;
+      }
       .container {
         max-width: 768px;
         width: 100%;
@@ -53,6 +67,9 @@ class App extends Torus.StyledComponent {
   compose() {
     return jdom`
     <div>
+      <div class="cover">
+      </div>
+      <div class="whatever">
       <div class="container">
         <header>
           <div>
@@ -72,7 +89,8 @@ class App extends Torus.StyledComponent {
           <p class="tagline">${langs[this.lang].tagline}</p>
           <a style="color: black" href="https://portfolio.glitches.me">portfolio</a>
         </div>
-        <footer>glitches.me 2022</footer>
+        <footer>glitches.me 2023</footer>
+      </div>
       </div>
     </div>`;
   }

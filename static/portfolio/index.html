@@ -43,20 +43,81 @@
     .th {
       width: 100%;
     }
-    .projects {
+    /* .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       row-gap: 50px;
       column-gap: 50px;
+    } */
+
+    p.keywords {
+      font-style: italic;
     }
 
     .project {
       height: -moz-fit-content;
       position: relative;
+      margin: 0 0 1.5em;
       width: 100%;
       border: solid black 2px;
       box-sizing: border-box;
     }
+
+    /* https://stackoverflow.com/questions/23001679/css-columns-flexbox-with-no-gaps-between-items */
+.projects {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+
+.project {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@media only screen and (min-width: 400px) {
+    .projects {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .projects {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .projects {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .projects {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
+    }
+}
   </style>
   <script src="https://unpkg.com/mithril/mithril.js"></script>
 </head>
@@ -83,10 +144,19 @@
     const root = document.querySelector(".projects")
 
     const data = [
+    {
+        title: "Dynamic Memory Lab",
+        year: 2023,
+        link: "https://www.dialogueperspectives.org/blog/dynamic-memory-lab/",
+        client: "Coalition for Pluralistic Public Discourse",
+        keywords: ["choo.io", "node.js"],
+        img: "https://img.glitches.me/images/2023/08/14/652F71DF-882C-4C23-94B8-4B24ADE76BA0_1_105_c.md.jpg",
+      },
       {
         title: "[[open-lab]]",
         year: 2023,
         link: "https://open-lab.glitch.me/",
+        client: "open lab",
         keywords: ["cosma", "Markdown", "Exhibition Design"],
         img: "https://img.glitches.me/images/2023/07/31/Screenshot-2023-07-31-at-10.01.45.png",
       },
@@ -94,6 +164,7 @@
         title: "UrbanRecall Archive",
         year: 2023,
         link: "https://urbanrecall.net/",
+        client: "UrbanRecall & Koproduktionslabor Dortmund",
         keywords: ["Airtable", "node.js", "cables.gl"],
         img: "https://img.glitches.me/images/2023/07/31/Screenshot-2023-07-31-at-09-58-02-urbanrecall_web_archive.png",
       },
@@ -131,7 +202,7 @@
         title: "Empty Mind",
         year: 2021,
         link: "https://empty-minds.vercel.app/",
-        client: "MAXLab",
+        client: "MAXLab, CREATIE & AP University of Applied Sciences and Arts",
         keywords: ["React", "Firebase", "Unity"],
         img: "https://empty-minds.vercel.app/assets/og.png",
       },
@@ -216,7 +287,7 @@
         d.img && m("img.th", {src: d.img, alt: d.alt}),
         d.link ? m("p", m("a", { href: d.link, target: "_blank"}, d.title)) : m("p", d.title),
         d.client && m("p", `client: ${d.client}`),
-        m("p", `keywords: ${d.keywords.join(', ')}`),
+        m("p.keywords", `${d.keywords.join(', ')}`),
       ])
     ]))
   </script>

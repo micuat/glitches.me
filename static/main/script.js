@@ -87,7 +87,7 @@ class App extends Torus.StyledComponent {
         </header>
         <div>
           <p class="tagline">${langs[this.lang].tagline}</p>
-          <a style="color: black" href="https://portfolio.glitches.me">portfolio</a>
+          <a style="color: black" href="https://glitches.me/portfolio">portfolio</a>
         </div>
         <footer>glitches.me 2023</footer>
       </div>

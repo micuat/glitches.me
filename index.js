@@ -24,7 +24,7 @@ fs.readdirSync(staticFolder).forEach(file => {
   }
 });
 
-app.use('/', express.static('static/main'));
+app.use('/', express.static('static/main/build'));
 app.use('/portfolio', express.static('static/portfolio'));
 
 const APIKEY = 'a0dbd1677c73be90486081c4b352dc9a7ed5569573a3706d3f3a575aa65fb6ba';

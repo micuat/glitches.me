@@ -1,0 +1,33 @@
+{
+  "name": "choo-hydra-vite",
+  "version": "0.0.1",
+  "description": "What am I about?",
+  "main": "index.html",
+  "scripts": {
+    "start": "vite dev",
+    "build": "vite build"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead"
+  ],
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/~choo-hydra-vite"
+  },
+  "glitch": {
+    "projectType": "generated_static"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "static"
+  ]
+}

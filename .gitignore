@@ -6,6 +6,7 @@ node_modules
 *pem
 bsa/
 
+static/main/build
 static/main/mosys-test
 static/naotoo
 static/garden
